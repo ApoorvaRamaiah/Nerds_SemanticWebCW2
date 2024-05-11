@@ -1,0 +1,1096 @@
+@prefix :      <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix cw:    <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+cw:Pizzeria  a           owl:Class ;
+        rdfs:label       "Pizzeria" ;
+        rdfs:subClassOf  cw:Restaurant ;
+        skos:altLabel    "Pizza place" .
+
+cw:locatedInState  a        owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:range          cw:State ;
+        rdfs:subPropertyOf  cw:locatedIn .
+
+cw:Carrot  a             owl:Class ;
+        rdfs:label       "Carrot" ;
+        rdfs:subClassOf  cw:RootVegetable .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( cw:BarbecueSauce cw:Cheese cw:Meat cw:OliveOil cw:SeaFood cw:Tofu cw:TomatoSauce cw:VeganCheese cw:Vegetable )
+] .
+
+cw:VegetarianIngredient
+        a                owl:Class ;
+        rdfs:subClassOf  cw:Ingredient .
+
+cw:BlueCheese  a         owl:Class ;
+        rdfs:label       "Blue cheese" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:PizzaMarinara  a          owl:Class ;
+        rdfs:label           "Pizza marinara" ;
+        rdfs:subClassOf      cw:NamedPizza ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:TomatoSauce
+                             ] ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:Mozzarella
+                             ] ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:Garlic
+                             ] ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Garlic
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Mozzarella
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:TomatoSauce
+                                                     ]
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  [ a            owl:Class ;
+                                                                            owl:unionOf  ( cw:Garlic cw:Mozzarella cw:TomatoSauce )
+                                                                          ] ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] .
+
+cw:Oregano  a            owl:Class ;
+        rdfs:label       "Oregano" ;
+        rdfs:subClassOf  cw:Herbs .
+
+cw:Rosemary  a               owl:Class ;
+        rdfs:label           "Rosemary" ;
+        rdfs:subClassOf      cw:Herbs ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#RosemaryTopping> .
+
+cw:GourmetRestaurants
+        a                owl:Class ;
+        rdfs:label       "Gourmet restaurants" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:Fruit  a                  owl:Class ;
+        rdfs:comment         "For simplicity, this ontology relies on the common language usage of \"fruit\" (i.e., sweet fruit)." ;
+        rdfs:label           "Fruit" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#FruitTopping> .
+
+cw:Country  a                owl:Class ;
+        rdfs:label           "Country" ;
+        rdfs:subClassOf      cw:Location ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#Country> .
+
+cw:Tofu  a               owl:Class ;
+        rdfs:label       "Tofu" ;
+        rdfs:subClassOf  cw:VeganIngredient .
+
+cw:Broccoli  a           owl:Class ;
+        rdfs:label       "Broccoli" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:HawaiianPizza  a      owl:Class ;
+        rdfs:label       "Hawaiian pizza" ;
+        rdfs:subClassOf  cw:NamedPizza , cw:AmericanPizza ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:TomatoSauce
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Pineapple
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Ham
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Cheese
+                         ] .
+
+cw:FruitPizza  a             owl:Class ;
+        rdfs:label           "Fruit pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Fruit
+                                                     ]
+                                                   )
+                             ] .
+
+cw:Shrimp  a             owl:Class ;
+        rdfs:label       "Shrimp" ;
+        rdfs:subClassOf  cw:SeaFood .
+
+cw:BlackOlives  a        owl:Class ;
+        rdfs:label       "Black olives" ;
+        rdfs:subClassOf  cw:Olives .
+
+cw:Cheese  a                 owl:Class ;
+        rdfs:subClassOf      cw:VegetarianIngredient ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> .
+
+cw:Ingredient  a         owl:Class ;
+        rdfs:label       "Ingredient" ;
+        rdfs:subClassOf  cw:Food .
+
+cw:firstLineAddress  a  owl:DatatypeProperty ;
+        rdfs:domain  cw:Address ;
+        rdfs:range   xsd:string .
+
+cw:Ricotta  a            owl:Class ;
+        rdfs:label       "Ricotta" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:HasIngredient  owl:equivalentProperty
+                <http://www.co-ode.org/ontologies/pizza/pizza.owl#HasIngredient> .
+
+cw:Anchovies  a              owl:Class ;
+        rdfs:subClassOf      cw:SeaFood ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#AnchoviesTopping> .
+
+cw:BarAndGrill  a        owl:Class ;
+        rdfs:label       "Bar and Grill" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:locatedInAddress  a      owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:range          cw:Address ;
+        rdfs:subPropertyOf  cw:locatedIn .
+
+cw:State  a              owl:Class ;
+        rdfs:label       "State" ;
+        rdfs:subClassOf  cw:Location ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:locatedInCountry ;
+                           owl:someValuesFrom  cw:Country
+                         ] .
+
+cw:Provolone  a          owl:Class ;
+        rdfs:label       "Provolone" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:postCode  a       owl:DatatypeProperty ;
+        rdfs:domain  cw:Address ;
+        rdfs:range   xsd:string .
+
+cw:CalifornianPizza  a   owl:Class ;
+        rdfs:label       "Californian pizza" ;
+        rdfs:subClassOf  cw:AmericanPizza .
+
+cw:Tuna  a               owl:Class ;
+        rdfs:label       "Tuna" ;
+        rdfs:subClassOf  cw:SeaFood .
+
+dc:creator  a   owl:AnnotationProperty .
+
+cw:MexicanRestaurant  a  owl:Class ;
+        rdfs:label       "Mexican restaurant" ;
+        rdfs:subClassOf  cw:AmericanRestaurant .
+
+cw:SeafoodPizza  a           owl:Class ;
+        rdfs:label           "Seafood pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:SeaFood
+                                                     ]
+                                                   )
+                             ] .
+
+cw:PizzaByStyle  a       owl:Class ;
+        rdfs:comment     "Organizes pizzas by their style" ;
+        rdfs:subClassOf  cw:Pizza .
+
+cw:Pub  a                owl:Class ;
+        rdfs:label       "Pub" ;
+        rdfs:subClassOf  cw:BarsPubsClubs .
+
+cw:Mortadella  a         owl:Class ;
+        rdfs:label       "Mortadella" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:VeganCheese  a        owl:Class ;
+        rdfs:label       "Vegan cheese" ;
+        rdfs:subClassOf  cw:VeganIngredient ;
+        skos:altLabel    "Dairy-free cheese" .
+
+cw:Pizza  a                  owl:Class ;
+        rdfs:label           "Pizza" ;
+        rdfs:subClassOf      cw:MenuItem ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza> .
+
+cw:JapanesePizza  a      owl:Class ;
+        rdfs:label       "Japanese pizza" ;
+        rdfs:subClassOf  cw:PizzaByStyle ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  [ a            owl:Class ;
+                                                 owl:unionOf  ( cw:Salmon cw:Tuna )
+                                               ]
+                         ] .
+
+cw:Spinach  a                owl:Class ;
+        rdfs:label           "Spinach" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping> .
+
+cw:Cheddar  a            owl:Class ;
+        rdfs:label       "Cheddar" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:hasIngredient  a    owl:ObjectProperty ;
+        rdfs:domain    cw:Food ;
+        rdfs:range     cw:Ingredient ;
+        owl:inverseOf  cw:isIngredientOf .
+
+cw:MexicanPizza  a           owl:Class ;
+        rdfs:label           "Mexican pizza" ;
+        rdfs:subClassOf      cw:AmericanPizza ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a            owl:Class ;
+                                                       owl:unionOf  ( [ a                   owl:Restriction ;
+                                                                        owl:onProperty      cw:hasIngredient ;
+                                                                        owl:someValuesFrom  cw:Beans
+                                                                      ]
+                                                                      [ a                   owl:Restriction ;
+                                                                        owl:onProperty      cw:hasIngredient ;
+                                                                        owl:someValuesFrom  cw:HotSauce
+                                                                      ]
+                                                                    )
+                                                     ]
+                                                   )
+                             ] .
+
+cw:GoatCheese  a             owl:Class ;
+        rdfs:label           "Goat cheese" ;
+        rdfs:subClassOf      cw:Cheese ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#GoatsCheeseTopping> .
+
+cw:Food  a                   owl:Class ;
+        rdfs:label           "Food" ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasValue ;
+                               owl:someValuesFrom  cw:ItemValue
+                             ] ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food> .
+
+cw:ButternutSquash  a    owl:Class ;
+        rdfs:label       "ButternutSquash" ;
+        rdfs:subClassOf  cw:WinterSquash .
+
+cw:BarsPubsClubs  a      owl:Class ;
+        rdfs:label       "Bars, pubs and clubs" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:locatedInCity  a         owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:range          cw:City ;
+        rdfs:subPropertyOf  cw:locatedIn .
+
+cw:DietaryRestaurant  a  owl:Class ;
+        rdfs:label       "Dietary restaurant" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:     a                owl:Ontology ;
+        dc:creator       "Ernesto Jimenez Ruiz" ;
+        owl:versionInfo  "Version 02/03/2024" .
+
+cw:Garlic  a                 owl:Class ;
+        rdfs:label           "Garlic" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping> .
+
+cw:Feta  a               owl:Class ;
+        rdfs:label       "Feta" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:KaraokeBar  a         owl:Class ;
+        rdfs:label       "Karaoke bar" ;
+        rdfs:subClassOf  cw:Bar .
+
+cw:AmericanRestaurant
+        a                owl:Class ;
+        rdfs:label       "American restaurant" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:name  a          owl:DatatypeProperty ;
+        rdfs:range  xsd:string .
+
+cw:Onions  owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping> .
+
+cw:YellowPepper  a       owl:Class ;
+        rdfs:label       "Yellow pepper" ;
+        rdfs:subClassOf  cw:Pepper .
+
+cw:HotSauce  a           owl:Class ;
+        rdfs:label       "Hot sauce" ;
+        rdfs:subClassOf  cw:Sauce .
+
+cw:Scallops  a           owl:Class ;
+        rdfs:label       "Scallop" ;
+        rdfs:subClassOf  cw:SeaFood .
+
+cw:Gorgonzola  a             owl:Class ;
+        rdfs:label           "Gorgonzola" ;
+        rdfs:subClassOf      cw:Cheese ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping> .
+
+cw:GreekPizza  a             owl:Class ;
+        rdfs:label           "Greek pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Class ;
+                                                       owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                                               owl:onProperty      cw:hasIngredient ;
+                                                                               owl:someValuesFrom  cw:Feta
+                                                                             ]
+                                                                             [ a                   owl:Restriction ;
+                                                                               owl:onProperty      cw:hasIngredient ;
+                                                                               owl:someValuesFrom  cw:Olives
+                                                                             ]
+                                                                             [ a                   owl:Restriction ;
+                                                                               owl:onProperty      cw:hasIngredient ;
+                                                                               owl:someValuesFrom  cw:Spinach
+                                                                             ]
+                                                                           )
+                                                     ]
+                                                   )
+                             ] .
+
+cw:PlumTomato  a         owl:Class ;
+        rdfs:label       "Plum tomato" ;
+        rdfs:subClassOf  cw:Tomato .
+
+cw:Currency  a      owl:Class ;
+        rdfs:label  "Currency" .
+
+cw:ChineseRestaurant  a  owl:Class ;
+        rdfs:label       "Chinese restaurant" ;
+        rdfs:subClassOf  cw:AsianRestaurant .
+
+cw:AsianRestaurant  a    owl:Class ;
+        rdfs:label       "Asian restaurant" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:BeansPizza  a             owl:Class ;
+        rdfs:label           "Beans pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Beans
+                                                     ]
+                                                   )
+                             ] .
+
+cw:Ham  a                    owl:Class ;
+        rdfs:label           "Ham" ;
+        rdfs:subClassOf      cw:Meat ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping> .
+
+cw:SweetPotato  a        owl:Class ;
+        rdfs:label       "Sweet potato" ;
+        rdfs:subClassOf  cw:RootVegetable .
+
+cw:Herbs  a              owl:Class ;
+        rdfs:label       "Herbs" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:amount  a         owl:DatatypeProperty ;
+        rdfs:domain  cw:ItemValue ;
+        rdfs:range   xsd:double .
+
+cw:Basil  a              owl:Class ;
+        rdfs:label       "Basil" ;
+        rdfs:subClassOf  cw:Herbs .
+
+cw:containsAdress  a        owl:ObjectProperty ;
+        rdfs:range          cw:Address ;
+        rdfs:subPropertyOf  cw:containsLocation .
+
+cw:IsIngredientOf  owl:equivalentProperty
+                <http://www.co-ode.org/ontologies/pizza/pizza.owl#IsIngredientOf> .
+
+cw:Seafood  owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping> .
+
+cw:PizzaSupreme  a       owl:Class ;
+        rdfs:label       "Pizza supreme" ;
+        rdfs:subClassOf  cw:NamedPizza ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Sausage
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Pepperoni
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Pepper
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Onion
+                         ] .
+
+cw:Fig  a                owl:Class ;
+        rdfs:label       "Fig" ;
+        rdfs:subClassOf  cw:Fruit .
+
+cw:containsCity  a          owl:ObjectProperty ;
+        rdfs:range          cw:City ;
+        rdfs:subPropertyOf  cw:containsLocation .
+
+cw:PizzaPlace  a             owl:Class ;
+        rdfs:subClassOf      cw:Restaurant ;
+        owl:equivalentClass  cw:Pizzeria .
+
+cw:Tomato  a                 owl:Class ;
+        rdfs:label           "Tomato" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping> .
+
+cw:OliveOil  a           owl:Class ;
+        rdfs:label       "Olive oil" ;
+        rdfs:subClassOf  cw:VeganIngredient .
+
+cw:Bakery  a             owl:Class ;
+        rdfs:label       "Bakery" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:Pumpkin  a            owl:Class ;
+        rdfs:label       "Pumpkin" ;
+        rdfs:subClassOf  cw:WinterSquash .
+
+cw:SeafoodRestaurant  a  owl:Class ;
+        rdfs:label       "Seafood restaurant" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+<http://www.semanticweb.org/apoorvaramaiah/ontologies/2024/4/untitled-ontology-32>
+        a       owl:Ontology .
+
+cw:MediterraneanRestaurant
+        a                owl:Class ;
+        rdfs:label       "Mediterranean restaurant" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:VegetarianPizza  a        owl:Class ;
+        rdfs:label           "Vegetarian pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#VegetarianPizza> ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  cw:VegetarianIngredient ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] .
+
+cw:SweetPizza  a         owl:Class ;
+        rdfs:label       "Sweet pizza" ;
+        rdfs:subClassOf  cw:PizzaByStyle .
+
+cw:Location  a           owl:Class ;
+        rdfs:label       "Location" ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  cw:Location ;
+                           owl:onProperty     cw:locatedIn
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  cw:Location ;
+                           owl:onProperty     cw:containsLocation
+                         ] .
+
+cw:Vegetable  a          owl:Class ;
+        rdfs:comment     "For simplicity, this ontology relies on the original meaning to refer to all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds." ;
+        rdfs:label       "Vegetable" ;
+        rdfs:subClassOf  cw:VeganIngredient .
+
+cw:VeganIngredient  a    owl:Class ;
+        rdfs:label       "Vegan ingredient" ;
+        rdfs:subClassOf  cw:VegetarianIngredient .
+
+cw:PizzaRomana  a        owl:Class ;
+        rdfs:label       "Pizza Romana" ;
+        rdfs:subClassOf  cw:PizzaByStyle .
+
+cw:Pepperoni  a          owl:Class ;
+        rdfs:label       "Pepperoni" ;
+        rdfs:subClassOf  cw:Sausage ;
+        skos:altLabel    "Pepperoni sausage" .
+
+cw:City  a               owl:Class ;
+        rdfs:label       "City" ;
+        rdfs:subClassOf  cw:Location ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  cw:State ;
+                           owl:onProperty     cw:locatedInState
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:locatedInCountry ;
+                           owl:someValuesFrom  cw:Country
+                         ] .
+
+cw:Capers  a                 owl:Class ;
+        rdfs:label           "Capers" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#CaperTopping> .
+
+cw:Pesto  a              owl:Class ;
+        rdfs:label       "Pesto" ;
+        rdfs:subClassOf  cw:Sauce .
+
+cw:Marinara  a           owl:Class ;
+        rdfs:label       "Marinara" ;
+        rdfs:subClassOf  cw:TomatoSauce .
+
+cw:SportsBar  a          owl:Class ;
+        rdfs:label       "Sports bar" ;
+        rdfs:subClassOf  cw:Bar .
+
+cw:Mozzarella  a             owl:Class ;
+        rdfs:label           "Mozzarella" ;
+        rdfs:subClassOf      cw:Cheese ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping> .
+
+cw:MeatPizza  a              owl:Class ;
+        rdfs:label           "Meat pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatyPizza> ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Meat
+                                                     ]
+                                                   )
+                             ] ;
+        skos:altLabel        "Meaty pizza" .
+
+cw:PizzaErnesto  a           owl:Class ;
+        rdfs:subClassOf      cw:NamedPizza ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Anchovies
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Capers
+                                                     ]
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  [ a            owl:Class ;
+                                                                            owl:unionOf  ( cw:Anchovies cw:Capers )
+                                                                          ] ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] .
+
+cw:VegetarianRestaurant
+        a                owl:Class ;
+        rdfs:label       "Vegetarian restaurant" ;
+        rdfs:subClassOf  cw:DietaryRestaurant .
+
+cw:SpanishRestaurant  a  owl:Class ;
+        rdfs:label       "Spanish restaurant" ;
+        rdfs:subClassOf  cw:MediterraneanRestaurant .
+
+cw:serves  a                owl:ObjectProperty ;
+        rdfs:subPropertyOf  owl:topObjectProperty .
+
+cw:Prosciutto  a         owl:Class ;
+        rdfs:label       "Prosciutto" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:Bacon  a              owl:Class ;
+        rdfs:label       "Bacon" ;
+        rdfs:subClassOf  cw:Meat ;
+        skos:altLabel    "Pancetta" .
+
+cw:Mushroom  a               owl:Class ;
+        rdfs:label           "Mushroom" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping> .
+
+cw:CocktailBars  a       owl:Class ;
+        rdfs:label       "Cocktail bars" ;
+        rdfs:subClassOf  cw:Bar .
+
+cw:Chicken  a                owl:Class ;
+        rdfs:label           "Chicken" ;
+        rdfs:subClassOf      cw:Meat ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping> .
+
+cw:isIngredientOf  a  owl:ObjectProperty ;
+        rdfs:domain  cw:Ingredient ;
+        rdfs:range   cw:Food .
+
+cw:Address  a            owl:Class ;
+        rdfs:label       "Address" ;
+        rdfs:subClassOf  cw:Location ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:postCode ;
+                           owl:someValuesFrom  xsd:string
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:firstLineAddress ;
+                           owl:someValuesFrom  xsd:string
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:locatedInCity ;
+                           owl:someValuesFrom  cw:City
+                         ] .
+
+cw:Pineapple  a          owl:Class ;
+        rdfs:label       "Pineapple" ;
+        rdfs:subClassOf  cw:Fruit .
+
+cw:RedPepper  a          owl:Class ;
+        rdfs:label       "Red pepper" ;
+        rdfs:subClassOf  cw:Pepper .
+
+cw:Eggplant  a           owl:Class ;
+        rdfs:label       "Eggplant" ;
+        rdfs:subClassOf  cw:Vegetable ;
+        skos:altLabel    "Aubergine" .
+
+cw:FrenchRestaurant  a   owl:Class ;
+        rdfs:label       "French restaurant" ;
+        rdfs:subClassOf  cw:MediterraneanRestaurant .
+
+cw:Restaurant  a         owl:Class ;
+        rdfs:label       "Restaurant" ;
+        rdfs:subClassOf  cw:Location ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:restaurantName ;
+                           owl:someValuesFrom  xsd:string
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:servesMenuItem ;
+                           owl:someValuesFrom  cw:MenuItem
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:locatedInAddress ;
+                           owl:someValuesFrom  cw:Address
+                         ] .
+
+cw:PizzaByIngredient  a  owl:Class ;
+        rdfs:comment     "Organized pizzas by ingredient" ;
+        rdfs:subClassOf  cw:Pizza .
+
+cw:Sauce  a                  owl:Class ;
+        rdfs:label           "Sauce" ;
+        rdfs:subClassOf      cw:Ingredient ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping> .
+
+cw:containsLocation  a      owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain         cw:Location ;
+        rdfs:range          cw:Location ;
+        rdfs:subPropertyOf  owl:topObjectProperty ;
+        owl:inverseOf       cw:locatedIn .
+
+cw:IndianRestaurant  a   owl:Class ;
+        rdfs:label       "Indian restaurant" ;
+        rdfs:subClassOf  cw:AsianRestaurant .
+
+cw:GreenPepper  a            owl:Class ;
+        rdfs:label           "Green pepper" ;
+        rdfs:subClassOf      cw:Pepper ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#GreenPepperTopping> .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( cw:Address cw:City cw:Country cw:Restaurant cw:State )
+] .
+
+cw:BarbecuePizza  a          owl:Class ;
+        rdfs:label           "Barbecue pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:BarbecueSauce
+                                                     ]
+                                                   )
+                             ] ;
+        skos:altLabel        "BBQ pizza" .
+
+cw:PizzaNutella  a       owl:Class ;
+        rdfs:label       "Pizza Nutella" ;
+        rdfs:subClassOf  cw:SweetPizza .
+
+cw:SushiRestaurant  a    owl:Class ;
+        rdfs:label       "Sushi restaurant" ;
+        rdfs:subClassOf  cw:JapaneseRestaurant .
+
+cw:Potato  a             owl:Class ;
+        rdfs:label       "Potato" ;
+        rdfs:subClassOf  cw:RootVegetable .
+
+cw:PizzaNapolitana  a        owl:Class ;
+        rdfs:label           "Pizza Napolitana" ;
+        rdfs:subClassOf      cw:MargheritaPizza ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:MargheritaPizza
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  [ a            owl:Class ;
+                                                                            owl:unionOf  ( cw:Basil cw:Cheese cw:TomatoSauce )
+                                                                          ] ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] .
+
+cw:ItalianRestaurant  a  owl:Class ;
+        rdfs:label       "Italian restaurant" ;
+        rdfs:subClassOf  cw:MediterraneanRestaurant .
+
+cw:Chorizo  a            owl:Class ;
+        rdfs:label       "Chorizo" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:amountCurrency  a  owl:ObjectProperty ;
+        rdfs:domain  cw:ItemValue ;
+        rdfs:range   cw:Currency .
+
+cw:NamedPizza  a             owl:Class ;
+        rdfs:subClassOf      cw:Pizza ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza> .
+
+cw:Club  a               owl:Class ;
+        rdfs:label       "Club" ;
+        rdfs:subClassOf  cw:BarsPubsClubs .
+
+cw:ItemValue  a          owl:Class ;
+        rdfs:label       "Item value" ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:amount ;
+                           owl:someValuesFrom  xsd:double
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:amountCurrency ;
+                           owl:someValuesFrom  cw:Currency
+                         ] .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( cw:Currency cw:Food cw:ItemValue cw:Location )
+] .
+
+cw:RootVegetable  a      owl:Class ;
+        rdfs:label       "Root vegetable" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:GreenOlives  a        owl:Class ;
+        rdfs:label       "Green olives" ;
+        rdfs:subClassOf  cw:Olives .
+
+cw:locatedInCountry  a      owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:range          cw:Country ;
+        rdfs:subPropertyOf  cw:locatedIn .
+
+cw:MenuItem  a           owl:Class ;
+        rdfs:label       "Menu item" ;
+        rdfs:subClassOf  cw:Food ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:itemName ;
+                           owl:someValuesFrom  xsd:string
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:servedInRestaurant ;
+                           owl:someValuesFrom  cw:Restaurant
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasValue ;
+                           owl:someValuesFrom  cw:ItemValue
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      cw:hasIngredient ;
+                           owl:someValuesFrom  cw:Ingredient
+                         ] .
+
+cw:FetaPizza  a              owl:Class ;
+        rdfs:label           "Feta pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Feta
+                                                     ]
+                                                   )
+                             ] .
+
+cw:restaurantName  a        owl:DatatypeProperty ;
+        rdfs:subPropertyOf  cw:name .
+
+cw:SeaFood  a             owl:Class ;
+        rdfs:label        "Seafood" ;
+        rdfs:subClassOf   cw:Ingredient ;
+        owl:disjointWith  cw:VegetarianIngredient .
+
+skos:altLabel  a  owl:AnnotationProperty .
+
+cw:WinterSquash  a       owl:Class ;
+        rdfs:label       "Winter squash" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:GreekRestaurant  a    owl:Class ;
+        rdfs:label       "Greek restaurant" ;
+        rdfs:subClassOf  cw:MediterraneanRestaurant .
+
+cw:CherryTomato  a       owl:Class ;
+        rdfs:label       "Cherry tomato" ;
+        rdfs:subClassOf  cw:Tomato .
+
+cw:itemName  a              owl:DatatypeProperty ;
+        rdfs:range          xsd:string ;
+        rdfs:subPropertyOf  cw:name .
+
+cw:locatedIn  a      owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain  cw:Location ;
+        rdfs:range   cw:Location .
+
+cw:Onion  a              owl:Class ;
+        rdfs:label       "Onion" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:TomatoSauce  a        owl:Class ;
+        rdfs:label       "Tomato sauce" ;
+        rdfs:subClassOf  cw:VeganIngredient , cw:Sauce .
+
+cw:Artichokes  a             owl:Class ;
+        rdfs:label           "Artichoke" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping> .
+
+cw:Pepper  a                 owl:Class ;
+        rdfs:label           "Pepper" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping> .
+
+cw:JapaneseRestaurant
+        a                owl:Class ;
+        rdfs:label       "Japanese restaurant" ;
+        rdfs:subClassOf  cw:AsianRestaurant .
+
+cw:MargheritaPizza  a        owl:Class ;
+        rdfs:label           "Margherita pizza" ;
+        rdfs:subClassOf      cw:NamedPizza ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:TomatoSauce
+                             ] ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:Mozzarella
+                             ] ;
+        rdfs:subClassOf      [ a                   owl:Restriction ;
+                               owl:onProperty      cw:hasIngredient ;
+                               owl:someValuesFrom  cw:Basil
+                             ] ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita> .
+
+cw:VeganPizza  a             owl:Class ;
+        rdfs:label           "Vegan pizza" ;
+        rdfs:subClassOf      cw:VegetarianPizza ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  cw:VeganIngredient ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] .
+
+cw:containsState  a         owl:ObjectProperty ;
+        rdfs:range          cw:State ;
+        rdfs:subPropertyOf  cw:containsLocation .
+
+cw:Zucchini  a           owl:Class ;
+        rdfs:label       "Zucchini" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:CoffeeShop  a         owl:Class ;
+        rdfs:label       "Coffee shop" ;
+        rdfs:subClassOf  cw:Restaurant ;
+        skos:altLabel    "Cafeteria" .
+
+cw:Salami  a             owl:Class ;
+        rdfs:label       "Salami" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:GlutenFreeRestaurant
+        a                owl:Class ;
+        rdfs:label       "Gluten-free restaurant" ;
+        rdfs:subClassOf  cw:DietaryRestaurant .
+
+cw:Bar  a                owl:Class ;
+        rdfs:label       "Bar" ;
+        rdfs:subClassOf  cw:BarsPubsClubs .
+
+cw:PineapplePizza  a         owl:Class ;
+        rdfs:label           "Pineapple pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Pineapple
+                                                     ]
+                                                   )
+                             ] .
+
+cw:Meatballs  a          owl:Class ;
+        rdfs:label       "Meatballs" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:servedInRestaurant
+        a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  cw:servedIn ;
+        owl:inverseOf       cw:servesMenuItem .
+
+cw:hasValue  a  owl:ObjectProperty .
+
+cw:Meat  a                   owl:Class ;
+        rdfs:label           "Meat" ;
+        rdfs:subClassOf      cw:Ingredient ;
+        owl:disjointWith     cw:VegetarianIngredient , cw:SeaFood ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping> .
+
+cw:Parmesan  a           owl:Class ;
+        rdfs:label       "Parmesan" ;
+        rdfs:subClassOf  cw:Cheese .
+
+cw:Olives  a                 owl:Class ;
+        rdfs:label           "Olives" ;
+        rdfs:subClassOf      cw:Vegetable ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#OliveTopping> .
+
+cw:BurgerPlace  a        owl:Class ;
+        rdfs:label       "Burger place" ;
+        rdfs:subClassOf  cw:Restaurant .
+
+cw:AmericanPizza  a          owl:Class ;
+        rdfs:label           "American pizza" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> .
+
+cw:Seeds  a              owl:Class ;
+        rdfs:label       "Seeds" ;
+        rdfs:subClassOf  cw:Vegetable .
+
+cw:servesMenuItem  a        owl:ObjectProperty ;
+        rdfs:subPropertyOf  cw:serves .
+
+cw:Beans  a              owl:Class ;
+        rdfs:label       "Beans" ;
+        rdfs:subClassOf  cw:Seeds .
+
+cw:PizzaBianca  a            owl:Class ;
+        rdfs:comment         "Pizza without tomato sauce" ;
+        rdfs:label           "Pizza bianca" ;
+        rdfs:subClassOf      cw:PizzaByStyle ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  [ a                 owl:Class ;
+                                                                            owl:complementOf  cw:TomatoSauce
+                                                                          ] ;
+                                                       owl:onProperty     cw:hasIngredient
+                                                     ]
+                                                   )
+                             ] ;
+        skos:altLabel        "White pizza" .
+
+cw:MushroomPizza  a          owl:Class ;
+        rdfs:label           "Mushroom pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom> ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Mushroom
+                                                     ]
+                                                   )
+                             ] ;
+        skos:altLabel        "Funghi pizza" .
+
+cw:Salmon  a             owl:Class ;
+        rdfs:label       "Salmon" ;
+        rdfs:subClassOf  cw:SeaFood .
+
+cw:BeerPlace  a          owl:Class ;
+        rdfs:label       "Beer place" ;
+        rdfs:subClassOf  cw:BarsPubsClubs ;
+        skos:altLabel    "Beer tavern" .
+
+cw:Beef  a               owl:Class ;
+        rdfs:label       "Beef" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:ChickenPizza  a           owl:Class ;
+        rdfs:label           "Chicken pizza" ;
+        rdfs:subClassOf      cw:PizzaByIngredient ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( cw:Pizza
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      cw:hasIngredient ;
+                                                       owl:someValuesFrom  cw:Chicken
+                                                     ]
+                                                   )
+                             ] .
+
+cw:JalapenoPepper  a         owl:Class ;
+        rdfs:label           "Jalapeno pepper" ;
+        rdfs:subClassOf      cw:Pepper ;
+        owl:equivalentClass  <http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping> .
+
+cw:VeganRestaurant  a    owl:Class ;
+        rdfs:label       "Vegan restaurant" ;
+        rdfs:subClassOf  cw:DietaryRestaurant .
+
+cw:servedIn  a         owl:ObjectProperty ;
+        owl:inverseOf  cw:serves .
+
+cw:Sausage  a            owl:Class ;
+        rdfs:label       "Sausage" ;
+        rdfs:subClassOf  cw:Meat .
+
+cw:BarbecueSauce  a      owl:Class ;
+        rdfs:label       "Barbecue sause" ;
+        rdfs:subClassOf  cw:VeganIngredient , cw:Sauce ;
+        skos:altLabel    "BBQ sauce" .
+
+cw:CrabMeat  a           owl:Class ;
+        rdfs:label       "Crab meat" ;
+        rdfs:subClassOf  cw:SeaFood .
+
+cw:Gastropub  a          owl:Class ;
+        rdfs:label       "Gastro pub" ;
+        rdfs:subClassOf  cw:Pub .

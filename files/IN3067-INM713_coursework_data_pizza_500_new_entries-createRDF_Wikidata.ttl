@@ -1,0 +1,4157 @@
+@prefix cw:    <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix wiki:  <http://wikidata.org/resource/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+cw:build_your_own_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "11.5" , "9.75" , "" ;
+        cw:hasValue            cw:11.5 , cw:9.75 , cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:item_value  a  cw:Itemvalue .
+
+cw:80129  a     cw:Postcode .
+
+cw:carne_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "14" , "15.5" ;
+        cw:hasValue            cw:14 , cw:15.5 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> , cw:milanos_pizza .
+
+cw:pizza_bites  a              cw:menu_item , cw:Food ;
+        cw:amount              "3.49" ;
+        cw:hasValue            cw:3.49 ;
+        cw:servedInRestaurant  cw:prima_pizza .
+
+<http://www.wikidata.org/entity/Q82799>
+        a                      cw:Restaurant , cw:menu_item , cw:Food , cw:state , cw:City , cw:Ingredient ;
+        cw:amount              "9.95" , "8" , "16.95" , "12.49" , "" , "16" ;
+        cw:containsAdress      cw:400_s_orlando_ave , <http://www.wikidata.org/entity/Q7053766> , cw:wembley ;
+        cw:containsCity        <http://www.wikidata.org/entity/Q82799> , <http://www.wikidata.org/entity/Q7053766> , cw:maitland ;
+        cw:containsState       <http://www.wikidata.org/entity/Q1071027> , <http://www.wikidata.org/entity/Q82799> ;
+        cw:hasValue            cw:8 , cw:16 , cw:12.49 , cw:16.95 , cw: , cw:9.95 ;
+        cw:isIngredientOf      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName            "No cheese on it. Square thick pan pizza." , "No cheese." ;
+        cw:locatedInAddress    <http://www.wikidata.org/entity/Q7053766> , cw:400_s_orlando_ave , cw:wembley ;
+        cw:locatedInCity       <http://www.wikidata.org/entity/Q82799> , cw:maitland , <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry    cw:us ;
+        cw:locatedInState      <http://www.wikidata.org/entity/Q1071027> , <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode            "60638" , "10003" , "32751" ;
+        cw:restaurantName      "Nerds Deli" , "Nypd Pizza" , "Nerds Pizza" ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#salerno's_pizza_restaurant> , <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q7053766> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> ;
+        cw:serves              cw:butter_chicken_pizza , cw:pizza_blanca , cw:pizza_bomba , <http://www.wikidata.org/entity/Q7053766> , cw:babycorn_pizza , cw:tandoori_pizza .
+
+cw:pizza_vodka_sauce  a        cw:menu_item , cw:Food ;
+        cw:amount              "16" ;
+        cw:hasValue            cw:16 ;
+        cw:servedInRestaurant  cw:steinway_pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_bagel_(plain)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "2.59" ;
+        cw:hasValue            cw:2.59 ;
+        cw:servedInRestaurant  cw:country_bagel_bakery .
+
+cw:queensgate  a  cw:state .
+
+cw:large  a                cw:Ingredient ;
+        cw:isIngredientOf  cw:chicken_supreme_pizza ;
+        cw:itemName        "Large" .
+
+cw:deluxe_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "12.99" , "" ;
+        cw:hasValue            cw:12.99 , cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza> .
+
+cw:saint_louis  a  cw:City .
+
+cw:2000_el_lago_dr  a  cw:Address .
+
+cw:hawaiin_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      cw:mount_vernon ;
+        cw:containsState     cw:oh ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     cw:mount_vernon ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:oh ;
+        cw:postcode          "43050" ;
+        cw:restaurantName    "Pirate's Cove" ;
+        cw:serves            cw:cove_taco_pizza , cw:cheese_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:greek_pizza , cw:h.o.g._pizza , cw:captain_jean_pizza , cw:pizza_bread , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:60101  a     cw:Postcode .
+
+cw:chinese_restaurantscocktail_loungestake_out_restaurantsfast_food_restaurantsseafood_restaurantsbar_and_grillsasian_restaurantsrestaurantschinese_restaurant
+        a       cw:categories .
+
+cw:howie_maui_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "7" ;
+        cw:hasValue            cw:7 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:pizza_puttenesca  a         cw:menu_item , cw:Food ;
+        cw:amount              "13" ;
+        cw:hasValue            cw:13 ;
+        cw:servedInRestaurant  cw:the_brentwood .
+
+cw:mn   a       cw:state .
+
+cw:77845  a     cw:Postcode .
+
+cw:2461  a      cw:Postcode .
+
+cw:bacon_cheddar_burger_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "7" ;
+        cw:hasValue            cw:7 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:4.75  a      cw:Itemvalue .
+
+cw:9.95  a      cw:Itemvalue .
+
+cw:vodka_sauce_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "15" ;
+        cw:hasValue            cw:15 ;
+        cw:servedInRestaurant  cw:town_pub .
+
+cw:hermosa_beach  a  cw:City .
+
+cw:oh   a       cw:state .
+
+cw:46237  a     cw:Postcode .
+
+cw:steinway_pizza  a         cw:Restaurant ;
+        cw:containsAdress    cw:3151_steinway_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     cw:queens ;
+        cw:locatedInAddress  cw:3151_steinway_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:queens ;
+        cw:postcode          "11103" ;
+        cw:restaurantName    "Steinway Pizza" ;
+        cw:serves            cw:pizza_vodka_sauce , cw:caeser_sald_pizza , cw:pizza_upside_down , cw:pizza_primavera , cw:pizza_white , cw:hawaiian_pizza , cw:caprese_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:regular_chicken_pizza , cw:taco_pizza .
+
+cw:48195  a     cw:Postcode .
+
+cw:16.24  a     cw:Itemvalue .
+
+cw:10.75  a     cw:Itemvalue .
+
+cw:bothell  a   cw:City .
+
+cw:15.95  a     cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#eggscellent_pizza_(white)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "10.75" ;
+        cw:hasValue            cw:10.75 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:whole  a                cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Whole" .
+
+cw:vodka_sauce  a          cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_vodka_sauce ;
+        cw:itemName        "Vodka sauce" .
+
+cw:45211  a     cw:Postcode .
+
+cw:italian_restaurantfast_food_restaurant
+        a       cw:categories .
+
+cw:7.49  a      cw:Itemvalue .
+
+cw:47401  a     cw:Postcode .
+
+cw:queens  a    cw:state .
+
+cw:31709  a     cw:Postcode .
+
+cw:10018  a     cw:Postcode .
+
+cw:2.75  a      cw:Itemvalue .
+
+cw:18.6  a      cw:Itemvalue .
+
+cw:moped_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "10" ;
+        cw:hasValue            cw:10 ;
+        cw:servedInRestaurant  cw:cafe_veloce .
+
+cw:33414  a     cw:Postcode .
+
+cw:medium_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "5" ;
+        cw:hasValue            cw:5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:arvada  a    cw:City .
+
+cw:lawrenceville  a  cw:state .
+
+cw:chinese_restaurant
+        a       cw:categories .
+
+cw:3246  a      cw:Postcode .
+
+cw:wichita  a   cw:City .
+
+cw:18607_bothell_way_n_e
+        a       cw:Address .
+
+cw:chinese_restaurantsgourmet_restaurantsasian_restaurantsrestaurantshunan_restaurantsseafood_restaurantschinese_restaurant
+        a       cw:categories .
+
+cw:b.b.q._chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.95" ;
+        cw:hasValue            cw:12.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:bruha_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "14" ;
+        cw:hasValue            cw:14 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:13.95  a     cw:Itemvalue .
+
+cw:asian_restaurantwashington_dc
+        a       cw:categories .
+
+cw:vegetarian_pizza  a         cw:Food , cw:menu_item ;
+        cw:amount              "23.99" , "" , "8.99" , "16.95" ;
+        cw:hasValue            cw: , cw:16.95 , cw:23.99 , cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tre_restaurant_&_wine_bar> , cw:the_fire_den , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:5.49  a      cw:Itemvalue .
+
+cw:95062  a     cw:Postcode .
+
+cw:lafayette  a  cw:City .
+
+cw:bianca_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "22.5" ;
+        cw:hasValue            cw:22.5 ;
+        cw:servedInRestaurant  cw:little_pizza_paradise .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1665_stelton_rd ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:1665_stelton_rd ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "8854" ;
+        cw:restaurantName    "Suraya's - Grill and Fried Chicken" ;
+        cw:serves            cw:cheese_pizza , cw:vegetable_pizza , cw:pizza_burger , cw:grilled_chicken_pizza , cw:pizza_fries , cw:buffalo_pizza .
+
+cw:5.95  a      cw:Itemvalue .
+
+cw:11379  a     cw:Postcode .
+
+cw:connellsville  a  cw:City .
+
+cw:75052  a     cw:Postcode .
+
+cw:spring  a    cw:City .
+
+cw:restaurantpizza_place
+        a       cw:categories .
+
+cw:11.49  a     cw:Itemvalue .
+
+cw:7301_n_fm_620  a  cw:Address .
+
+cw:11.95  a     cw:Itemvalue .
+
+cw:bend  a      cw:City .
+
+cw:italian_veggie_or_pizza_sub
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "4.5" ;
+        cw:hasValue            cw:4.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#louie's_pizza> .
+
+cw:30_mamaroneck_ave  a  cw:Address .
+
+cw:67203  a     cw:Postcode .
+
+cw:mi   a       cw:state .
+
+cw:3.49  a      cw:Itemvalue .
+
+cw:80004  a     cw:Postcode .
+
+cw:kennebunk_house_of_pizza
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:5_york_st ;
+        cw:containsCity      cw:kennebunk ;
+        cw:containsState     cw:me ;
+        cw:locatedInAddress  cw:5_york_st ;
+        cw:locatedInCity     cw:kennebunk ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:me ;
+        cw:postcode          "4043" ;
+        cw:restaurantName    "Kennebunk House Of Pizza" ;
+        cw:serves            cw:loaded_steak_pizza , cw:chicken_supreme_pizza .
+
+cw:3.95  a      cw:Itemvalue .
+
+cw:68154  a     cw:Postcode .
+
+cw:17.45  a     cw:Itemvalue .
+
+cw:wa   a       cw:state .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mario's_-_staten_island>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:staten_island ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:staten_island ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "10304" ;
+        cw:restaurantName    "Mario's - Staten Island" ;
+        cw:serves            <http://www.wikidata.org/entity/Q7053766> , cw:pork_tenderloin_pizzaiola , <http://www.wikidata.org/entity/Q1071027> .
+
+cw:brentwood  a  cw:state .
+
+cw:3151_steinway_st  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:7301_n_fm_620 ;
+        cw:containsCity      cw:austin ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:7301_n_fm_620 ;
+        cw:locatedInCity     cw:austin ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "78726" ;
+        cw:restaurantName    "Austin's Pizza" ;
+        cw:serves            cw:dessert_pizza , cw:the_white_pizza , cw:pizza_rolls , <http://www.wikidata.org/entity/Q107608526> , cw:bacon_pizzaburger .
+
+cw:hickory  a   cw:City .
+
+cw:pizza_pretzel  a            cw:menu_item , cw:Food ;
+        cw:amount              "1.25" ;
+        cw:hasValue            cw:1.25 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+cw:1001_s_main_st  a  cw:Address .
+
+cw:pizza_bistro  a           cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "11762" ;
+        cw:restaurantName    "Pizza Bistro" ;
+        cw:serves            cw:spicy_buffalo_pizza .
+
+<http://www.wikidata.org/entity/Q7053766>
+        a                      cw:City , cw:Restaurant , cw:Food , cw:menu_item , cw:categories , cw:state , cw:Address , cw:Ingredient ;
+        cw:amount              "12" , "17.95" , "15.3" , "7" , "5" , "16.95" , "11.49" , "8.79" , "10.99" , "3.75" , "15.95" , "15" , "23.99" , "2.99" , "12.5" , "19.99" , "19.95" , "8.99" , "8.8" , "9.99" , "13.95" , "4.95" , "14" , "10" , "" ;
+        cw:containsAdress      cw:100_charlton_rd , cw:15950_eureka_rd , cw:8680_pineview_ln_n , cw:13005_n_e_70th_pl , cw:1_n_university_hl , cw:6607_glenway_ave , cw:18_maple_st , cw:1431_plaza_pl , cw:708_jersey_ave , <http://www.wikidata.org/entity/Q1071027> , cw:120_e_post_rd , cw:14004_e_indiana_ave , cw:901_loveland_madeira_rd , <http://www.wikidata.org/entity/Q7053766> , cw:801_2nd_ave , cw:233_broadway , cw:242_harvard_st , cw:337_n_shore_dr , cw:50a , cw:115_w_main_st , cw:417_12th_st , cw:130_town_center_rd , cw:3130_route_10_w , cw:711_n_132nd_st , cw:400_n_center_st , cw:14_e_10th_st , cw:7559_metropolitan_ave , cw:715_lenoir_rhyne_blvd_s_e ;
+        cw:containsCity        cw:kirkland , cw:white_plains , cw:urbana , cw:denville , <http://www.wikidata.org/entity/Q7053766> , cw:provo , cw:westminster , cw:omaha , cw:hickory , cw:loveland , cw:middle_village , cw:brookline , cw:pittsburgh , cw:southgate , <http://www.wikidata.org/entity/Q107608526> , cw:hoboken , cw:sturbridge , cw:king_of_prussia , cw:hermosa_beach , cw:danvers , cw:osseo , cw:southlake , cw:burlington , <http://www.wikidata.org/entity/Q82799> , cw:saddle_brook ;
+        cw:containsState       cw:tx , cw:uptown , <http://www.wikidata.org/entity/Q1071027> , <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q82799> , cw:pitt , cw:ma , cw:ut , cw:ca , cw:mi , cw:longview , cw:il , cw:elmhurst , cw:manhattan , cw:in , cw:md , cw:pa , cw:blue_anchor , cw:juanita , <http://www.wikidata.org/entity/Q134121> , <http://www.wikidata.org/entity/Q7053766> ;
+        cw:hasValue            cw:10 , cw:15.95 , cw:14 , cw: , cw:23.99 , cw:4.95 , cw:19.99 , cw:8.79 , cw:11.49 , cw:16.95 , cw:8.8 , cw:9.99 , cw:15.3 , cw:3.75 , cw:12.5 , cw:2.99 , cw:15 , cw:5 , cw:10.99 , cw:17.95 , cw:13.95 , cw:19.95 , cw:8.99 , cw:7 , cw:12 ;
+        cw:isIngredientOf      cw:chicken_verde_artisan_crust_pizza , cw:prosciutto_arugula_artisan_crust_pizza , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q1071027> , cw:pizza_bianca , cw:bacon_pizzaburger , cw:pizza_skins , cw:pizza_of_the_day , cw:bruha_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:bronx_bomber_pizza , cw:tandoori_pizza , cw:hawaiian_pizza , cw:carne_pizza , cw:white_pizza , cw:sorrentino_pizza , cw:reuben_pizza , cw:pizza_marinara ;
+        cw:itemName            "Ham and pineapple" , "Ham, cheese and Pineapple" , "Garlic sauce, spinach, ricotta and mozzarella." , "Mozzarella, ricotta, garlic, no sauce" , "Ricotta, mozzarella and pecorino cheeses." , "Sausage, rabe and ricotta cheese." , "Wild mushrooms, grilled portobellos and smoked mozzarella cheese." , "Prosciutto and roasted red peppers topped with aged white cheddar, mozzarella, parmesan and arugula, drizzled with balsamic glaze" , "Flour tortilla topped with cheese sauce and ground beef" , "Mortadella, genoa salami, soppressata and provolone cheese." , "Eggplant, Ricotta Cheese, Tomato Sauce, Mozzarella and Romano Cheese" , "Ricotta, Mozzarella and Garlic" , "priced accordingly" , "Butternut squash, ricotta cheese and sage." , "Thinly sliced corned beef, sauerkraut and russian dressing, topped with pizza cheese and finished with swiss cheese" , "Chicken, roasted red peppers, garlic and topped with mozzarella" , "Mozzarella, ricotta and parmesan cheeses, artichoke hearts, garlic and herbs." , "Paneer, Butter, red peppers, topped with mozzarella" , "Chicken, roasted red peppers, garlic and spinach topped with mozzarella, drizzled with basil pesto" , "Canadian bacon, pineapple." , "Mozzarella and Ricotta" , "Hamburger, breakfast bacon, red onions, and cheddar cheese ." , "Breaded eggplant, ricotta cheese, basil, tomato sauce and fresh mozzarella" , "Fresh basil, rich tomato sauce and fresh mozzarella cheese." , "Crispy prosciutto chips, ricotta cheese, rosemary and artichokes." , "Beef, chicken or bean" , "Mozzarella, ricotta and parmesan cheeses" , "Deep dish crust filled with red bliss mashed potatoes. topped with bacon, cheddar and sour cream" , "Fresh Garlic and Basil Sprinkled with Parmigiana and Reggiano" , "Canadian bacon, ham, fresh pineapple, red onion, tomato sauce and mozzarella" ;
+        cw:locatedInAddress    cw:6607_glenway_ave , cw:18_maple_st , cw:3130_route_10_w , <http://www.wikidata.org/entity/Q7053766> , cw:400_n_center_st , cw:14_e_10th_st , cw:8680_pineview_ln_n , cw:7559_metropolitan_ave , cw:120_e_post_rd , <http://www.wikidata.org/entity/Q1071027> , cw:417_12th_st , cw:1431_plaza_pl , cw:14004_e_indiana_ave , cw:711_n_132nd_st , cw:50a , cw:708_jersey_ave , cw:100_charlton_rd , cw:901_loveland_madeira_rd , cw:130_town_center_rd , cw:801_2nd_ave , cw:13005_n_e_70th_pl , cw:15950_eureka_rd , cw:115_w_main_st , cw:715_lenoir_rhyne_blvd_s_e , cw:337_n_shore_dr , cw:1_n_university_hl , cw:242_harvard_st , cw:233_broadway ;
+        cw:locatedInCity       cw:southgate , <http://www.wikidata.org/entity/Q7053766> , cw:white_plains , cw:pittsburgh , cw:danvers , cw:denville , cw:loveland , <http://www.wikidata.org/entity/Q107608526> , cw:westminster , cw:hoboken , cw:kirkland , cw:hickory , cw:urbana , cw:sturbridge , cw:brookline , cw:southlake , cw:omaha , cw:provo , <http://www.wikidata.org/entity/Q82799> , cw:osseo , cw:burlington , cw:hermosa_beach , cw:saddle_brook , cw:middle_village , cw:king_of_prussia ;
+        cw:locatedInCountry    cw:us ;
+        cw:locatedInState      cw:ma , cw:ut , <http://www.wikidata.org/entity/Q1071027> , cw:mi , cw:manhattan , <http://www.wikidata.org/entity/Q82799> , cw:longview , cw:md , cw:in , cw:juanita , cw:tx , <http://www.wikidata.org/entity/Q107608526> , cw:pa , cw:il , cw:ca , cw:blue_anchor , cw:elmhurst , cw:pitt , <http://www.wikidata.org/entity/Q7053766> , cw:uptown , <http://www.wikidata.org/entity/Q134121> ;
+        cw:postcode            "84602" , "10017" , "1803" , "7834" , "76092" , "10279" , "8037" , "45140" , "61801" , "16501" , "45211" , "98033" , "15212" , "1923" , "55369" , "46237" , "19406" , "11379" , "7030" , "48195" , "1566" , "2446" , "10601" , "68154" , "90254" , "99216" , "28602" , "7663" , "21157" ;
+        cw:restaurantName      "Casa-Rica" , "Riccardo's Pizza" , "Uno Pizzeria & Grill" , "Greek's Pizzeria" , "Rancho Viejo Mexican Grill" , "Woolworth Tower Kitchen" , "Rivertowne North Shore" , "Larosa's Pizzeria" , "Pagliacci Pizza" , "Rosa Ii Pizzeria & Restaurant" , "Brio Tuscan Grille - Southlake - Southlake Town Square" , "Patrick Molloy's Sports Pub" , "Sluggers Sports Bar" , "Mediterraneo Ristorante" , "Lineage - Permanently Closed" , "Euro Pizzeria" , "The Hamilton Inn" , "Uno Pizzeria & Grill - Sturbridge" , "Crane Alley" , "Michael's Jewish Delicatessen" , "Baglianis Food Market" , "Frank's Pizzeria" , "Mexican Gardens" , "The Lookout Catering" , "Brigham Young University" , "Supreme Roast Beef & Sea Food" , "Patsy's Pizzeria" , "Boston's Restaurant & Sports Bar" , "Midori Japanese Restaurant" ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> , cw:the_brentwood , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mario's_-_staten_island> , cw:the_fire_den , <http://www.wikidata.org/entity/Q1071027> , cw:zios_italian_kitchen_-_olathe , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#john's_of_12th_street> , cw:lake_bowl_inc , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> , cw:la_hacienda , cw:little_caesars_pizza , cw:the_melting_pot_-_white_plains , cw:walnut_grille , <http://www.wikidata.org/entity/Q82799> ;
+        cw:serves              cw:the_youghigheny_pizza , <http://www.wikidata.org/entity/Q82799> , cw:caprese_pizza , cw:b.l.t._pizza , cw:hawaiian_pizza , cw:mini_cheese_or_pepperoni_thin_crust_pizza , cw:capelli_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:pita_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:gluten_free_pepperoni_thin_crust_pizza , cw:kids_size_pizza , cw:wood_oven_pizza , cw:house_made_pizza , cw:grandma_pizza , cw:sushi_pizza , cw:sorrentino_pizza , cw:cheesesteak_pizza , cw:pizza_bagel , cw:primavera_pizza , cw:large_pizza_cheese , cw:dark_hollow_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#eggscellent_pizza_(white)> , cw:pierogi_pizza , cw:reuben_pizza , cw:piranha_pizza , cw:chicken_verde_artisan_crust_pizza , cw:build_your_own_pizza , cw:gourmet_meat_pizzatm , cw:buffalo_chicken_pizza , cw:white_pizza , cw:pizza_primavera , cw:pepperoni_pizza , cw:seafood_pizza , cw:pizza_marinara , cw:baked_ziti_pizza , cw:chicken_parmigiana_pizza , cw:spinach_pizza , cw:gluten_free_veggie_thin_crust_pizza , cw:pizza_of_the_day , cw:m.y.o.p_make_your_own_pizza , cw:gourmet_chicken_ranch_pizza , cw:prosciutto_arugula_artisan_crust_pizza , cw:order_3_large_pizzas_and_get_the_4th_pizza_free , cw:pizza_steak , cw:half_pizzas , cw:pizza_roll , cw:make_your_own_pizza , cw:river_town_pizza , cw:bbq_chicken_pizza , cw:cheese_pizza , cw:vegetarian_pizza , cw:jones_street_pizza , cw:pizza_dough , cw:pizza_rolls , cw:pizza_skins , cw:grilled_pizza , cw:pizza_logs , cw:truffled_egg_pizza , cw:pizza , cw:ohio_river_pizza .
+
+cw:la   a       cw:state .
+
+cw:5    a       cw:Itemvalue .
+
+cw:cheesesteak_stuffed_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "22.95" ;
+        cw:hasValue            cw:22.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:dc   a       cw:state .
+
+cw:restaurantitalian_restaurant
+        a       cw:categories .
+
+cw:the_works_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "8" ;
+        cw:hasValue            cw:8 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:matthewstown  a  cw:state .
+
+cw:701_gordon_dr  a  cw:Address .
+
+cw:1201_16th_st  a  cw:Address .
+
+cw:small_pepperoni_or_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "2.99" ;
+        cw:hasValue            cw:2.99 ;
+        cw:servedInRestaurant  cw:gatehouse_restaurant .
+
+cw:deluxe_style_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "11" ;
+        cw:hasValue            cw:11 ;
+        cw:servedInRestaurant  cw:milanos_pizza .
+
+cw:2_toppings_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "5.5" , "" ;
+        cw:hasValue            cw:5.5 , cw: ;
+        cw:servedInRestaurant  cw:bosses_pizza_-_keller .
+
+cw:11165_s_eastern_ave
+        a       cw:Address .
+
+cw:b.l.t._pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:hoboken  a   cw:City .
+
+cw:made_to_order  a        cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Made to order" .
+
+cw:15   a       cw:Itemvalue .
+
+cw:267_s_19th_st  a  cw:Address .
+
+cw:19103  a     cw:Postcode .
+
+cw:7.5  a       cw:Itemvalue .
+
+cw:pizza  a                    cw:menu_item , cw:Food ;
+        cw:amount              "" , "6.49" , "11.5" , "9.5" , "4.99" , "5.99" , "7.5" , "116.99" , "5.95" , "15" ;
+        cw:hasValue            cw:5.95 , cw:116.99 , cw:11.5 , cw:4.99 , cw: , cw:7.5 , cw:6.49 , cw:15 , cw:9.5 , cw:5.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> , cw:brothers_2 , <http://www.wikidata.org/entity/Q11236330> , cw:tower_hill_tavern , cw:california_pizza_kitchen , cw:booies_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#jet's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#philly's_subs> , <http://www.wikidata.org/entity/Q7053766> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mo's_pub_eatery> , cw:the_spud_spot .
+
+cw:the_everything_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.95" ;
+        cw:hasValue            cw:12.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:little_pizza_paradise
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:cascade_village_mall_across_from_target ;
+        cw:containsCity      cw:bend ;
+        cw:containsState     cw:or ;
+        cw:locatedInAddress  cw:cascade_village_mall_across_from_target ;
+        cw:locatedInCity     cw:bend ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:or ;
+        cw:postcode          "97701" ;
+        cw:restaurantName    "Little Pizza Paradise" ;
+        cw:serves            cw:bianca_pizza , cw:cheese_pizza .
+
+cw:address  a   cw:Address .
+
+cw:pizza_sandwich  a           cw:menu_item , cw:Food ;
+        cw:amount              "5.55" ;
+        cw:hasValue            cw:5.55 ;
+        cw:servedInRestaurant  cw:potbelly_sandwich_shop .
+
+cw:great_tasting_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "4.95" ;
+        cw:hasValue            cw:4.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#copeland's_cheescake_bistro> .
+
+cw:tandoori_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "15.25" ;
+        cw:hasValue            cw:15.25 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q82799> .
+
+cw:pizza_con_uovo_fritto
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#luke's_locker> .
+
+cw:martinizing  a            cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:arvada ;
+        cw:containsState     cw:co ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:arvada ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:co ;
+        cw:postcode          "80007" ;
+        cw:restaurantName    "Martinizing" ;
+        cw:serves            cw:white_pizza .
+
+cw:25504  a     cw:Postcode .
+
+cw:tavern_on_the_square
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:18607_bothell_way_n_e ;
+        cw:containsCity      cw:bothell ;
+        cw:containsState     cw:queensgate ;
+        cw:locatedInAddress  cw:18607_bothell_way_n_e ;
+        cw:locatedInCity     cw:bothell ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:queensgate ;
+        cw:postcode          "98011" ;
+        cw:restaurantName    "Tavern On The Square" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> .
+
+cw:78758  a     cw:Postcode .
+
+cw:mild_or_hot  a          cw:Ingredient ;
+        cw:isIngredientOf  cw:chicken_wing_pizza ;
+        cw:itemName        "Mild or hot" .
+
+cw:pizza_placepizzarestaurantstake_out_restaurants
+        a       cw:categories .
+
+cw:meat_lovers_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#harry's_pizza> .
+
+cw:78726  a     cw:Postcode .
+
+cw:md   a       cw:state .
+
+cw:98031  a     cw:Postcode .
+
+cw:endicott  a  cw:City .
+
+cw:15.25  a     cw:Itemvalue .
+
+cw:7102  a      cw:Postcode .
+
+cw:white_lake  a  cw:City .
+
+cw:philadelphia  a  cw:City .
+
+cw:pizza_steak_sub  a          cw:menu_item , cw:Food ;
+        cw:amount              "7.25" ;
+        cw:hasValue            cw:7.25 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:chicken_butter_red_peppers_topped_with_mozzarella
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:butter_chicken_pizza ;
+        cw:itemName        "Chicken, Butter, red peppers, topped with mozzarella" .
+
+cw:10279  a     cw:Postcode .
+
+cw:order_of_4  a           cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_logs ;
+        cw:itemName        "Order of 4" .
+
+cw:1707_delaware_ave  a  cw:Address .
+
+cw:kirkland  a  cw:City .
+
+cw:60638  a     cw:Postcode .
+
+cw:7.25  a      cw:Itemvalue .
+
+cw:veggie_pizza  a             cw:Food , cw:menu_item ;
+        cw:amount              "16.99" , "7" , "13.5" , "" ;
+        cw:hasValue            cw: , cw:16.99 , cw:13.5 , cw:7 ;
+        cw:servedInRestaurant  cw:milanos_pizza , <http://www.wikidata.org/entity/Q1071027> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> , cw:bravo_pizza_hollywood .
+
+cw:tre_colori_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> .
+
+cw:     a                  cw:Postcode , cw:Currency , cw:Ingredient , cw:Itemvalue ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q7053766> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_boy_citra_pils_(4)> , cw:rolled_pizza_bites_10 , cw:spicy_buffalo_pizza , cw:half_pizzas , cw:vodka_sauce_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_cheese_pizza.> , cw:white_pizza , cw:1_topping_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_bagel_(plain)> , cw:cheese_steak_pizza , cw:regular_chicken_pizza , cw:californian_pizza , cw:romana_pizza , cw:veggie_supreme_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#veggie_pizza_(on_honey_wheat_dough)> , cw:8_corner_pizza , cw:captain_jean_pizza , cw:greek_chicken_pizza , cw:pizza_bagel_with_pepperoni , cw:cheese_pizza , cw:deluxe_style_pizza , cw:garden_pizza , cw:hawaiian_pizza , cw:meat_pizza , cw:meat_eaters_pizza , cw:tre_colori_pizza , cw:gourmet_chicken_ranch_pizza , cw:pizza_dough_balls , cw:mini_cheese_or_pepperoni_thin_crust_pizza , cw:order_3_large_pizzas_and_get_the_4th_pizza_free , cw:piranha_pizza , cw:veggie_or_meat_deluxe_pizza , cw:smoked_chicken_bbq_pizza , cw:pizza_dipping_sauce_cup , cw:large_the_works_pizza , cw:house_made_pizza , cw:pesto_chicken_pizza , cw:rancher_pizza , cw:pepperoni_pizza_steak , cw:pizza_roll , cw:grilled_pizza , cw:garlic_chicken_pizza , cw:river_town_pizza , cw:pizza_sub_deluxe , cw:bbq_chicken_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#eggscellent_pizza_(white)> , cw:gluten_free_pepperoni_thin_crust_pizza , cw:chicken_parmigiana_pizza , cw:cadillac_pizza , cw:2_toppings_pizza , cw:gyro_pizza , cw:cheesesteak_pizza , cw:cheesy_pita_pizza , cw:greek_pizza , cw:pizza_upside_down , cw:primavera_pizza , cw:bbq_pizza , cw:pizza_fries , cw:caprese_pizza , cw:capelli_pizza , cw:small_supreme_pizza , cw:chocolate_chip_pizza , cw:chicken_pizza_steak , cw:breakfast_pizza , cw:cheesesteak_stuffed_cheese_pizza , cw:howie_maui_pizza , cw:chicken_parmesan_pizza , cw:pizza_steak_sub , cw:pepperoni_pizza , cw:taco_pizza , cw:spinach_artichoke_pizza , cw:create_pizza , cw:meat_lover_pizza , cw:seafood_pizza , cw:pizza_bread , cw:pizza_bites , cw:pizza_sticks , cw:gluten_free_pizza , cw:hawaiin_pizza , cw:philly_cheese_steak_pizza , cw:baked_ziti_pizza , cw:mini_pizza , cw:medium_cheese_pizza , cw:italian_pizza , cw:pizza_sub , cw:cove_taco_pizza , <http://www.wikidata.org/entity/Q82799> , cw:meatball_pizza , cw:pepperoni_chicken_pizza_steak , cw:pizza__burger , cw:pepperoni_pizza_pretzel , cw:loaded_steak_pizza , cw:pizza_con_formaggio , cw:philly_cheesesteak_pizza , <http://www.wikidata.org/entity/Q1071027> , cw:blt_pizza , cw:pizza_skins , cw:vegetarian_pizza , cw:pizza_white , cw:pizza_or_calzone , cw:pizza_dough , cw:margarita_pizza , cw:build_your_own_pizza , cw:veggie_combo_pizza , cw:southwest_pizza , cw:veggie_pizza , cw:carne_pizza , cw:gourmet_meat_pizzatm , cw:pizza_dough_flats , cw:kids_size_pizza , cw:provencal_pizza , cw:pizza_bagel , cw:pizza_con_uovo_fritto , cw:vegetable_pizza , cw:pizza_white_truffle_meat_sauce , cw:chinese_pizza , cw:make_your_own_pizza , cw:create_your_own_pizza , cw:bacon_cheddar_burger_pizza , cw:pizza_burger , cw:italian_veggie_or_pizza_sub , cw:h.o.g._pizza , cw:wood_fire_grilled_pizza , cw:great_tasting_cheese_pizza , cw:gluten_free_veggie_thin_crust_pizza , cw:marinara_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pesto_sauce_pizza_(vegetarian)> , cw:italiano_pizza , cw:gluten_free_veg_out_pizza , cw:plain_cheese_pizza , cw:steak_pizza , cw:pizza_bomba , cw:chicken_wing_pizza , cw:moped_pizza , cw:the_works_pizza , cw:pizza_of_the_day , cw:pizzaroni , cw:pizza_rolls , cw:byo_pizza , cw:pizza_blanca , cw:dark_hollow_pizza , cw:khans_korean_pizza , cw:supreme_combo_pizza , cw:pork_tenderloin_pizzaiola , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_supreme_pizza.> , cw:pizza_steak , cw:pizza_combo , cw:pizza , cw:bianca_pizza , cw:tuna_pizza , cw:m.y.o.p_make_your_own_pizza , cw:buffalo_chicken_pizza , cw:pepperoni_pizza_burger , <http://www.wikidata.org/entity/Q107608526> , cw:deluxe_pizza , cw:pizza_pretzel , cw:super_pizza_sub , cw:small_pepperoni_or_cheese_pizza , cw:thin_crust_margarita_pizza , cw:small_cheese_pizza ;
+        cw:itemName        "" .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#with_beef_or_chicken_in_double_crust_pizza.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:cheesesteak_stuffed_cheese_pizza ;
+        cw:itemName        "With beef or chicken in double crust pizza." .
+
+cw:whole_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "11" ;
+        cw:hasValue            cw:11 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q1071027> .
+
+cw:98837  a     cw:Postcode .
+
+cw:us   a       cw:Country .
+
+cw:ontario_street  a  cw:state .
+
+cw:weirs_beach  a  cw:state .
+
+cw:15.5  a      cw:Itemvalue .
+
+cw:s_connelsvl  a  cw:state .
+
+cw:478_south_st  a  cw:Address .
+
+cw:10   a       cw:Itemvalue .
+
+<http://www.wikidata.org/entity/Q11236330>
+        a                      cw:Restaurant , cw:Food , cw:menu_item , cw:Ingredient , cw:City , cw:categories ;
+        cw:amount              "15.99" ;
+        cw:containsAdress      cw:938_n_main_st , cw:address , cw:701_gordon_dr , cw:1400_county_road_101_n ;
+        cw:containsCity        cw:city , <http://www.wikidata.org/entity/Q7053766> , cw:sioux_city , cw:suffolk ;
+        cw:containsState       cw:ia , cw:mn , cw:va , cw:state ;
+        cw:hasValue            cw:15.99 ;
+        cw:isIngredientOf      <http://www.wikidata.org/entity/Q7053766> , cw:spicy_meat_pizza , cw:dessert_pizza ;
+        cw:itemName            "Organic black mission figs, marinated oyster mushrooms, caramelized onions, fire roasted red peppers, mozzarella and gorgonzola cheese topped with fresh basil" , "Stuffed with an all natural cinnamon apple filling and topped with icing and powdered  sugar . made with real butter and no high fructose corn syrup" , "Italian sausage, prosciutto, pepperoni, spicy salami, caramelized onions and tomato" ;
+        cw:locatedInAddress    cw:address , cw:1400_county_road_101_n , cw:701_gordon_dr , cw:938_n_main_st ;
+        cw:locatedInCity       cw:city , <http://www.wikidata.org/entity/Q7053766> , cw:sioux_city , cw:suffolk ;
+        cw:locatedInCountry    cw:us , cw:country ;
+        cw:locatedInState      cw:state , cw:ia , cw:va , cw:mn ;
+        cw:postcode            "postcode" , "51101" , "55447" , "23434" ;
+        cw:restaurantName      "name" , "Charlies American Grill & Spirits" , "Gina Maria's Pizza" , "China Moon" ;
+        cw:servedInRestaurant  cw:peter_piper_pizza ;
+        cw:serves              cw:pizza , cw:white_pizza , cw:pizza_roll , cw:menu_item , cw:greek_pizza .
+
+cw:arnold  a    cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#butternut_squash_roasted_brussels_sprouts_and_bacon.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Butternut squash, roasted brussels sprouts and bacon." .
+
+cw:5.25  a      cw:Itemvalue .
+
+cw:1_corporate_dr  a  cw:Address .
+
+cw:bacon_pizzaburger  a        cw:menu_item , cw:Food ;
+        cw:amount              "14.49" ;
+        cw:hasValue            cw:14.49 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza> .
+
+cw:southwest_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+cw:memphis  a   cw:City .
+
+cw:choose_any_of_your_own_toppings_to_make_it_your_own
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:create_your_own_pizza ;
+        cw:itemName        "Choose any of your own toppings to make it your own" .
+
+cw:pine_plains  a  cw:City .
+
+cw:clark  a     cw:City .
+
+cw:menifee  a   cw:City .
+
+cw:china_kitchen  a          cw:Restaurant ;
+        cw:containsAdress    cw:406_e_colfax_ave ;
+        cw:containsCity      cw:denver ;
+        cw:containsState     cw:co ;
+        cw:locatedInAddress  cw:406_e_colfax_ave ;
+        cw:locatedInCity     cw:denver ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:co ;
+        cw:postcode          "80203" ;
+        cw:restaurantName    "China Kitchen" ;
+        cw:serves            cw:pizza_roll .
+
+cw:pepperoni_pizza_burger
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "3.95" ;
+        cw:hasValue            cw:3.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+cw:plain_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "11" ;
+        cw:hasValue            cw:11 ;
+        cw:servedInRestaurant  cw:milanos_pizza .
+
+cw:crestview_heights  a  cw:state .
+
+cw:pepperoni_in_marinara_sauce_mozzarella_cheese_chives
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza ;
+        cw:itemName        "Pepperoni in marinara sauce, mozzarella cheese, chives" .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#avellino's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:775_goodman_rd_e ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     cw:ms ;
+        cw:locatedInAddress  cw:775_goodman_rd_e ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ms ;
+        cw:postcode          "38671" ;
+        cw:restaurantName    "Avellino's Pizza" ;
+        cw:serves            cw:pizza_bread .
+
+cw:chicken_pizza_steak
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "6.95" ;
+        cw:hasValue            cw:6.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#louie's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1019_westgate_ave ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:oh ;
+        cw:locatedInAddress  cw:1019_westgate_ave ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:oh ;
+        cw:postcode          "43055" ;
+        cw:restaurantName    "Louie's Pizza" ;
+        cw:serves            cw:italian_veggie_or_pizza_sub .
+
+cw:pizza_white_truffle_meat_sauce
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "15" ;
+        cw:hasValue            cw:15 ;
+        cw:servedInRestaurant  cw:the_brentwood .
+
+cw:grand_prairie  a  cw:City .
+
+cw:westminster  a  cw:City .
+
+cw:babycorn_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "12" ;
+        cw:hasValue            cw:12 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q82799> .
+
+cw:pizza__burger  a            cw:menu_item , cw:Food ;
+        cw:amount              "3.75" ;
+        cw:hasValue            cw:3.75 ;
+        cw:servedInRestaurant  cw:prince_pizza .
+
+cw:1_topping_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "5.25" , "" ;
+        cw:hasValue            cw:5.25 , cw: ;
+        cw:servedInRestaurant  cw:bosses_pizza_-_keller .
+
+cw:sc   a       cw:state .
+
+cw:broussard  a  cw:City .
+
+cw:7834  a      cw:Postcode .
+
+cw:19406  a     cw:Postcode .
+
+cw:pitt  a      cw:state .
+
+cw:pa   a       cw:state .
+
+cw:32751  a     cw:Postcode .
+
+cw:pizza_or_calzone  a         cw:menu_item , cw:Food ;
+        cw:amount              "15.75" , "" ;
+        cw:hasValue            cw:15.75 , cw: ;
+        cw:servedInRestaurant  cw:zpizza .
+
+cw:cheese_pizzarito  a         cw:menu_item , cw:Food ;
+        cw:amount              "6.7" ;
+        cw:hasValue            cw:6.7 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#casino's_pizza> .
+
+cw:restaurantnew_york_city
+        a       cw:categories .
+
+cw:10007  a     cw:Postcode .
+
+cw:708_jersey_ave  a  cw:Address .
+
+cw:shredded_mozzarella_corned_beef_russian_dressing
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:the_reuben_pizza ;
+        cw:itemName        "shredded mozzarella, corned beef, russian dressing" .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#casino's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:190_n_swift_rd ;
+        cw:containsCity      cw:addison ;
+        cw:containsState     cw:il ;
+        cw:locatedInAddress  cw:190_n_swift_rd ;
+        cw:locatedInCity     cw:addison ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:il ;
+        cw:postcode          "60101" ;
+        cw:restaurantName    "Casino's Pizza" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , cw:cheese_pizzarito .
+
+cw:art_cafe  a               cw:Restaurant ;
+        cw:containsAdress    cw:3610_route_378 ;
+        cw:containsCity      cw:bethlehem ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:3610_route_378 ;
+        cw:locatedInCity     cw:bethlehem ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "18015" ;
+        cw:restaurantName    "Art Cafe" ;
+        cw:serves            cw:margarita_flat_bread_pizza .
+
+cw:90049  a     cw:Postcode .
+
+cw:pizza_placepizza  a  cw:categories .
+
+cw:120_e_post_rd  a  cw:Address .
+
+cw:henderson  a  cw:City .
+
+<http://www.wikidata.org/entity/Q1071027>
+        a                      cw:categories , cw:state , cw:menu_item , cw:Ingredient , cw:Restaurant , cw:Address , cw:City , cw:Food ;
+        cw:amount              "23.99" , "7.25" , "14" , "" ;
+        cw:containsAdress      cw:315_s_college_mall_rd , cw:4921_state_road_26_e , cw:200_e_chestnut_st ;
+        cw:containsCity        cw:lafayette , <http://www.wikidata.org/entity/Q7053766> , cw:bloomington ;
+        cw:containsState       cw:in , cw:ontario_street ;
+        cw:hasValue            cw:7.25 , cw: , cw:14 , cw:23.99 ;
+        cw:isIngredientOf      <http://www.wikidata.org/entity/Q7053766> , cw:white_pizza , cw:spinach_pizza ;
+        cw:itemName            "Fresh mozzarella and basil" , "Fresh mozzarella, fresh parmesan and fresh garlic" , "Freshly Sauteed Spinach, Mozzarella and Garlic" ;
+        cw:locatedInAddress    cw:200_e_chestnut_st , cw:315_s_college_mall_rd , cw:4921_state_road_26_e ;
+        cw:locatedInCity       cw:bloomington , <http://www.wikidata.org/entity/Q7053766> , cw:lafayette ;
+        cw:locatedInCountry    cw:us ;
+        cw:locatedInState      cw:in , cw:ontario_street ;
+        cw:postcode            "47905" , "47401" , "60611" ;
+        cw:restaurantName      "Fazoli's" , "Francesca's On Chestnut" , "Fox's Pizza Den" ;
+        cw:servedInRestaurant  cw:the_fire_den , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mario's_-_staten_island> , cw:baldinelli_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#dioli's_italian_market> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#ton's_drive-in> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#applebee's_tracy> , cw:paisans_pizza_-_berwyn , <http://www.wikidata.org/entity/Q107608526> ;
+        cw:serves              cw:veggie_pizza , cw:whole_pizza , cw:cheese_pizza , cw:pizzaroni , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> , cw:taco_pizza .
+
+cw:101_w_main_st  a  cw:Address .
+
+cw:reuben_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:mini_cheese_or_pepperoni_thin_crust_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "2.99" ;
+        cw:hasValue            cw:2.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:1.25  a      cw:Itemvalue .
+
+cw:thin_crust_margarita_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:48239  a     cw:Postcode .
+
+cw:14004_e_indiana_ave
+        a       cw:Address .
+
+cw:kyoto_sushi  a            cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q1071027> ;
+        cw:containsState     cw:queens ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q1071027> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:queens ;
+        cw:postcode          "11367" ;
+        cw:restaurantName    "Kyoto Sushi" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> .
+
+cw:bbq_pizza  a                cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#uncle_john's_pizza> .
+
+cw:pepperoni_chicken_pizza_steak
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "6.95" ;
+        cw:hasValue            cw:6.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+cw:prima_pizza  a            cw:Restaurant ;
+        cw:containsAdress    cw:133_back_river_neck_rd ;
+        cw:containsCity      cw:essex ;
+        cw:containsState     cw:md ;
+        cw:locatedInAddress  cw:133_back_river_neck_rd ;
+        cw:locatedInCity     cw:essex ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:md ;
+        cw:postcode          "21221" ;
+        cw:restaurantName    "Prima Pizza" ;
+        cw:serves            cw:white_pizza , cw:pizza_steak , cw:greek_pizza , cw:pizza_sub , cw:pizza_fries , cw:pizza_burger , cw:steak_pizza , cw:pizza_bites .
+
+cw:la_hacienda  a            cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q11236330> ;
+        cw:containsState     cw:ga ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q11236330> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ga ;
+        cw:postcode          "31709" ;
+        cw:restaurantName    "La Hacienda" ;
+        cw:serves            <http://www.wikidata.org/entity/Q7053766> .
+
+cw:116_ann_st  a  cw:Address .
+
+cw:icon_grill  a             cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:seattle ;
+        cw:containsState     cw:wa ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:seattle ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wa ;
+        cw:postcode          "98101" ;
+        cw:restaurantName    "Icon Grill" ;
+        cw:serves            cw:pepperoni_pizza , cw:bbq_chicken_pizza , cw:spinach_artichoke_pizza , cw:smoked_chicken_bbq_pizza , cw:wood_fire_grilled_pizza .
+
+cw:pizza_steak  a              cw:menu_item , cw:Food ;
+        cw:amount              "7.25" , "5.79" , "4.5" , "8.99" , "6.95" , "9.95" , "7.29" ;
+        cw:hasValue            cw:5.79 , cw:9.95 , cw:4.5 , cw:8.99 , cw:7.29 , cw:6.95 , cw:7.25 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:prima_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> , cw:milanos_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#carluccio's> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:blt_pizza  a                cw:menu_item , cw:Food ;
+        cw:amount              "" , "19.95" ;
+        cw:hasValue            cw: , cw:19.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:broad_street_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8.5" ;
+        cw:hasValue            cw:8.5 ;
+        cw:servedInRestaurant  cw:broad_street_cafe .
+
+cw:3817_w_13th_st_n  a  cw:Address .
+
+cw:13760  a     cw:Postcode .
+
+cw:8854  a      cw:Postcode .
+
+cw:milanos_pizza  a          cw:Restaurant ;
+        cw:containsAdress    cw:9822_libra_ave ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q11236330> ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:9822_libra_ave ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q11236330> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "95827" ;
+        cw:restaurantName    "Milanos Pizza" ;
+        cw:serves            cw:pepperoni_pizza_steak , cw:primavera_pizza , cw:pizza_steak , cw:plain_cheese_pizza , cw:buffalo_chicken_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:white_pizza , cw:carne_pizza , cw:deluxe_style_pizza , cw:veggie_pizza , cw:hawaiian_pizza .
+
+cw:margarita_flat_bread_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "7" ;
+        cw:hasValue            cw:7 ;
+        cw:servedInRestaurant  cw:art_cafe .
+
+cw:breakfast_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+cw:pizza_bagel_with_pepperoni
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "3.29" ;
+        cw:hasValue            cw:3.29 ;
+        cw:servedInRestaurant  cw:country_bagel_bakery .
+
+cw:town_pub  a               cw:Restaurant ;
+        cw:containsAdress    cw:378_broad_st ;
+        cw:containsCity      cw:bloomfield ;
+        cw:containsState     cw:grove ;
+        cw:locatedInAddress  cw:378_broad_st ;
+        cw:locatedInCity     cw:bloomfield ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:grove ;
+        cw:postcode          "7003" ;
+        cw:restaurantName    "Town Pub" ;
+        cw:serves            cw:cheese_steak_pizza , cw:chicken_parmesan_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:vodka_sauce_pizza .
+
+cw:create_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "3" ;
+        cw:hasValue            cw:3 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:chicken_parmesan_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" , "17" ;
+        cw:hasValue            cw: , cw:17 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza> , cw:town_pub .
+
+cw:buffalo  a   cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#veggie_pizza_(on_honey_wheat_dough)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16.2" ;
+        cw:hasValue            cw:16.2 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> .
+
+cw:4200_boat_st  a  cw:Address .
+
+cw:6007_us_60_e  a  cw:Address .
+
+cw:grilled_chicken_goat_cheese_gorgonzola_broccoli_rabe
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Grilled Chicken, Goat Cheese, Gorgonzola, Broccoli Rabe" .
+
+cw:california_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  cw:zios_italian_kitchen_-_olathe .
+
+cw:54401  a     cw:Postcode .
+
+cw:77506  a     cw:Postcode .
+
+cw:sunny_side_up_eggs_crispy_pancetta_spinach_mozzarella
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:truffled_egg_pizza ;
+        cw:itemName        "Sunny side up eggs, crispy pancetta, spinach, mozzarella" .
+
+cw:mesquite  a  cw:City .
+
+cw:98260  a     cw:Postcode .
+
+cw:gatehouse_restaurant
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:116_ann_st ;
+        cw:containsCity      cw:pickens ;
+        cw:containsState     cw:sc ;
+        cw:locatedInAddress  cw:116_ann_st ;
+        cw:locatedInCity     cw:pickens ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:sc ;
+        cw:postcode          "29671" ;
+        cw:restaurantName    "Gatehouse Restaurant" ;
+        cw:serves            cw:small_pepperoni_or_cheese_pizza .
+
+cw:super_pizza_sub  a          cw:menu_item , cw:Food ;
+        cw:amount              "5.99" ;
+        cw:hasValue            cw:5.99 ;
+        cw:servedInRestaurant  cw:bravo_pizza_hollywood .
+
+cw:lake_bowl_inc  a          cw:Restaurant ;
+        cw:containsAdress    cw:1165_n_stratford_rd ;
+        cw:containsCity      cw:moses_lake ;
+        cw:containsState     cw:raugust ;
+        cw:locatedInAddress  cw:1165_n_stratford_rd ;
+        cw:locatedInCity     cw:moses_lake ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:raugust ;
+        cw:postcode          "98837" ;
+        cw:restaurantName    "Lake Bowl Inc" ;
+        cw:serves            <http://www.wikidata.org/entity/Q7053766> .
+
+cw:22507_plymouth_rd  a  cw:Address .
+
+cw:romana_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> .
+
+cw:house_made_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:country  a   cw:Country .
+
+cw:2300_s_16th_st  a  cw:Address .
+
+cw:357_us_highway_9  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#buffalo_sauce_grilled_chicken_mozzarella_and_cheddar_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:buffalo_chicken_pizza ;
+        cw:itemName        "Buffalo sauce, grilled chicken, mozzarella and cheddar cheese." .
+
+cw:5.5  a       cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#john's_of_12th_street>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:302_e_12th_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:manhattan ;
+        cw:locatedInAddress  cw:302_e_12th_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:manhattan ;
+        cw:postcode          "10003" ;
+        cw:restaurantName    "John's of 12th Street" ;
+        cw:serves            cw:marinara_pizza , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:chandler  a  cw:City .
+
+cw:3505_a_longmire_dr
+        a       cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#carluccio's>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:932_s_10th_st ;
+        cw:containsCity      cw:philadelphia ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:932_s_10th_st ;
+        cw:locatedInCity     cw:philadelphia ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "19147" ;
+        cw:restaurantName    "Carluccio's" ;
+        cw:serves            cw:pizza_fries , cw:pizza_burger , cw:pizza_steak .
+
+cw:bosses_pizza_-_keller
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:201_n_main_st ;
+        cw:containsCity      cw:keller ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:201_n_main_st ;
+        cw:locatedInCity     cw:keller ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "76248" ;
+        cw:restaurantName    "Bosses Pizza - Keller" ;
+        cw:serves            cw:2_toppings_pizza , cw:1_topping_pizza .
+
+cw:pasadena  a  cw:City .
+
+cw:10002  a     cw:Postcode .
+
+cw:denville  a  cw:City .
+
+cw:38671  a     cw:Postcode .
+
+cw:pizza_dough_flats  a        cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  cw:glutenfree_things .
+
+cw:greek_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "19.99" , "" , "16.95" , "16.99" ;
+        cw:hasValue            cw:19.99 , cw:16.95 , cw: , cw:16.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> , <http://www.wikidata.org/entity/Q11236330> , cw:prima_pizza , <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> .
+
+cw:1001_jason_pl  a  cw:Address .
+
+cw:chocolate_chip_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "3.99" ;
+        cw:hasValue            cw:3.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizzaworks> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizza_works> .
+
+cw:greek_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.99" ;
+        cw:hasValue            cw:23.99 ;
+        cw:servedInRestaurant  cw:the_fire_den .
+
+cw:juanita  a   cw:state .
+
+cw:columbus  a  cw:City .
+
+cw:kennebunk  a  cw:City .
+
+cw:tower_hill_tavern  a      cw:Restaurant ;
+        cw:containsAdress    cw:264_lakeside_ave ;
+        cw:containsCity      cw:laconia ;
+        cw:containsState     cw:weirs_beach ;
+        cw:locatedInAddress  cw:264_lakeside_ave ;
+        cw:locatedInCity     cw:laconia ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:weirs_beach ;
+        cw:postcode          "3246" ;
+        cw:restaurantName    "Tower Hill Tavern" ;
+        cw:serves            cw:pizza .
+
+cw:sioux_city  a  cw:City .
+
+cw:taco_pronto  a            cw:Restaurant ;
+        cw:containsAdress    cw:8385_w_21st_st_n ;
+        cw:containsCity      cw:wichita ;
+        cw:containsState     cw:ks ;
+        cw:locatedInAddress  cw:8385_w_21st_st_n ;
+        cw:locatedInCity     cw:wichita ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ks ;
+        cw:postcode          "67205" ;
+        cw:restaurantName    "Taco Pronto" ;
+        cw:serves            cw:taco_pizza .
+
+cw:oceano_bistro_-_clayton
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:44_n_brentwood ;
+        cw:containsCity      cw:saint_louis ;
+        cw:containsState     cw:mo ;
+        cw:locatedInAddress  cw:44_n_brentwood ;
+        cw:locatedInCity     cw:saint_louis ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mo ;
+        cw:postcode          "63105" ;
+        cw:restaurantName    "Oceano Bistro - Clayton" ;
+        cw:serves            cw:cheese_pizza .
+
+cw:pizzarestaurantspizza_placepizza_place_ahwatukee_foothills
+        a       cw:categories .
+
+cw:dessert_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza> .
+
+cw:m.y.o.p_make_your_own_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:kernersville  a  cw:City .
+
+cw:providence  a  cw:City .
+
+cw:pepperoni_and_sausage_and_2_liter_soda
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:large_pizza_cheese ;
+        cw:itemName        "Pepperoni and Sausage and 2 Liter Soda" .
+
+cw:67205  a     cw:Postcode .
+
+cw:10601  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#uncle_john's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3480_s_carrier_pkwy ;
+        cw:containsCity      cw:grand_prairie ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:3480_s_carrier_pkwy ;
+        cw:locatedInCity     cw:grand_prairie ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "75052" ;
+        cw:restaurantName    "Uncle John's Pizza" ;
+        cw:serves            cw:bbq_pizza , cw:create_your_own_pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_placerestaurantsfood_&_entertainment>
+        a       cw:categories .
+
+cw:caeser_sald_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "18.5" ;
+        cw:hasValue            cw:18.5 ;
+        cw:servedInRestaurant  cw:steinway_pizza .
+
+cw:8_corner_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "11.99" ;
+        cw:hasValue            cw:11.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#jet's_pizza> .
+
+cw:401_e_whitestone_blvd
+        a       cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#joey's_n_y_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:11165_s_eastern_ave ;
+        cw:containsCity      cw:henderson ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:11165_s_eastern_ave ;
+        cw:locatedInCity     cw:henderson ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "89052" ;
+        cw:restaurantName    "Joey's N Y Pizza" ;
+        cw:serves            cw:margarita_pizza , cw:supreme_pizza , cw:garden_pizza , cw:white_pizza .
+
+cw:2601  a      cw:Postcode .
+
+cw:lawrence_township  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#choose_a_pizza_size.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:cheese_pizza ;
+        cw:itemName        "Choose a pizza size." .
+
+cw:wood_oven_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "14" ;
+        cw:hasValue            cw:14 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:6226_w_ogden  a  cw:Address .
+
+cw:zpizza  a                 cw:Restaurant ;
+        cw:containsAdress    cw:5365_alton_pkwy ;
+        cw:containsCity      cw:irvine ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:5365_alton_pkwy ;
+        cw:locatedInCity     cw:irvine ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "92604" ;
+        cw:restaurantName    "Zpizza" ;
+        cw:serves            cw:pizza_or_calzone .
+
+cw:loveland  a  cw:City .
+
+cw:7    a       cw:Itemvalue .
+
+cw:de   a       cw:state .
+
+cw:rolled_pizza_bites_10
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "5.95" ;
+        cw:hasValue            cw:5.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> .
+
+cw:ia   a       cw:state .
+
+cw:pizza_sticks  a             cw:menu_item , cw:Food ;
+        cw:amount              "7.5" ;
+        cw:hasValue            cw:7.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mo's_pub_eatery> .
+
+cw:meat_lover_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "23.5" , "16.99" ;
+        cw:hasValue            cw:23.5 , cw:16.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> , cw:bravo_pizza_hollywood .
+
+cw:los_angeles  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hot_sauce_celery_grilled_chicken_and_bleu_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:chicken_wing_pizza ;
+        cw:itemName        "Hot sauce, celery, grilled chicken and bleu cheese." .
+
+cw:77003  a     cw:Postcode .
+
+cw:17   a       cw:Itemvalue .
+
+cw:13.5  a      cw:Itemvalue .
+
+cw:bronson_strike_zone
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:bronson ;
+        cw:containsState     cw:mi ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:bronson ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mi ;
+        cw:postcode          "49028" ;
+        cw:restaurantName    "Bronson Strike Zone" ;
+        cw:serves            <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_supreme_pizza.> , cw:small_supreme_pizza , cw:small_cheese_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_cheese_pizza.> .
+
+cw:the_brentwood  a          cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      cw:los_angeles ;
+        cw:containsState     cw:brentwood ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     cw:los_angeles ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:brentwood ;
+        cw:postcode          "90049" ;
+        cw:restaurantName    "The Brentwood" ;
+        cw:serves            <http://www.wikidata.org/entity/Q7053766> , cw:pizza_puttenesca , <http://www.wikidata.org/entity/Q107608526> , cw:pizza_white_truffle_meat_sauce .
+
+cw:bravo_pizza_hollywood
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:5142_hollywood_blvd ;
+        cw:containsCity      cw:los_angeles ;
+        cw:containsState     cw:los_feliz ;
+        cw:locatedInAddress  cw:5142_hollywood_blvd ;
+        cw:locatedInCity     cw:los_angeles ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:los_feliz ;
+        cw:postcode          "90027" ;
+        cw:restaurantName    "Bravo Pizza Hollywood" ;
+        cw:serves            cw:cheese_pizza , cw:meat_lover_pizza , cw:super_pizza_sub , cw:hawaiian_pizza , cw:pizza_sub , cw:veggie_pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2000_el_lago_dr ;
+        cw:containsCity      cw:arnold ;
+        cw:containsState     cw:mo ;
+        cw:locatedInAddress  cw:2000_el_lago_dr ;
+        cw:locatedInCity     cw:arnold ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mo ;
+        cw:postcode          "63010" ;
+        cw:restaurantName    "Imo's Pizza" ;
+        cw:serves            cw:vegetable_pizza , cw:meat_pizza , cw:cheese_pizza , cw:deluxe_pizza , cw:bbq_chicken_pizza .
+
+cw:7003  a      cw:Postcode .
+
+cw:veggie_lovers_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16.95" ;
+        cw:hasValue            cw:16.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#applebee's_tracy>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3060_naglee_rd ;
+        cw:containsCity      cw:tracy ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:3060_naglee_rd ;
+        cw:locatedInCity     cw:tracy ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "95304" ;
+        cw:restaurantName    "Applebee's Tracy" ;
+        cw:serves            <http://www.wikidata.org/entity/Q1071027> .
+
+cw:18.99  a     cw:Itemvalue .
+
+cw:greek_restaurant_and_fast_food_restaurantgreek_restaurantfast_food_restaurant
+        a       cw:categories .
+
+cw:pizza_placeitalian_restaurant
+        a       cw:categories .
+
+cw:98121  a     cw:Postcode .
+
+cw:pizza_bagel  a              cw:menu_item , cw:Food ;
+        cw:amount              "2.95" , "" ;
+        cw:hasValue            cw:2.95 , cw: ;
+        cw:servedInRestaurant  cw:i_love_bagels , cw:country_bagel_bakery , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:4.39  a      cw:Itemvalue .
+
+cw:boursin_mozzarella_arugula_parmesan
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Boursin, mozzarella, arugula, parmesan" .
+
+cw:1165_n_stratford_rd
+        a       cw:Address .
+
+cw:45840  a     cw:Postcode .
+
+cw:18.35  a     cw:Itemvalue .
+
+cw:the_spud_spot  a          cw:Restaurant ;
+        cw:containsAdress    cw:1818_manhattan_blvd ;
+        cw:containsCity      cw:harvey ;
+        cw:containsState     cw:la ;
+        cw:locatedInAddress  cw:1818_manhattan_blvd ;
+        cw:locatedInCity     cw:harvey ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:la ;
+        cw:postcode          "70058" ;
+        cw:restaurantName    "The Spud Spot" ;
+        cw:serves            cw:pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mo's_pub_eatery>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:317_2nd_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     cw:wa ;
+        cw:locatedInAddress  cw:317_2nd_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wa ;
+        cw:postcode          "98260" ;
+        cw:restaurantName    "Mo's Pub Eatery" ;
+        cw:serves            cw:pizza , cw:pizza_sticks .
+
+cw:6484  a      cw:Postcode .
+
+cw:walnut_grille  a          cw:Restaurant ;
+        cw:containsAdress    cw:1203_walnut_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:ma ;
+        cw:locatedInAddress  cw:1203_walnut_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ma ;
+        cw:postcode          "2461" ;
+        cw:restaurantName    "Walnut Grille" ;
+        cw:serves            cw:adult_cheese_pizza , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:brothers_2  a             cw:Restaurant ;
+        cw:containsAdress    cw:2901_watson_blvd ;
+        cw:containsCity      cw:endicott ;
+        cw:containsState     cw:crestview_heights ;
+        cw:locatedInAddress  cw:2901_watson_blvd ;
+        cw:locatedInCity     cw:endicott ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:crestview_heights ;
+        cw:postcode          "13760" ;
+        cw:restaurantName    "Brothers 2" ;
+        cw:serves            cw:pizza , cw:pizza_skins .
+
+cw:20002  a     cw:Postcode .
+
+cw:8.8  a       cw:Itemvalue .
+
+cw:98033  a     cw:Postcode .
+
+cw:pizza_marinara  a           cw:menu_item , cw:Food ;
+        cw:amount              "14.99" ;
+        cw:hasValue            cw:14.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:supreme_combo_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.5" ;
+        cw:hasValue            cw:23.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> .
+
+cw:406_e_colfax_ave  a  cw:Address .
+
+cw:hyannis  a   cw:City .
+
+cw:5_york_st  a  cw:Address .
+
+cw:italian_restaurant
+        a       cw:categories .
+
+cw:ohio_river_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:pickens  a   cw:City .
+
+cw:make_your_own_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:chicken_wing_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "19.95" , "13.95" ;
+        cw:hasValue            cw:19.95 , cw:13.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#salerno's_pizza_restaurant> .
+
+cw:2    a       cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#alfredo_sauce_mozzarella_and_provolone_cheese_.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:the_white_pizza ;
+        cw:itemName        "Alfredo sauce, mozzarella, and provolone cheese ." .
+
+cw:400_s_orlando_ave  a  cw:Address .
+
+cw:provo  a     cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brooklyn_style._square_thick_pan_pizza.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:itemName        "Brooklyn style. Square thick pan pizza." .
+
+cw:italian_restaurant_rittenhouse_squareitalian_restaurant
+        a       cw:categories .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizzaworks>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:401_e_whitestone_blvd ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:401_e_whitestone_blvd ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "78613" ;
+        cw:restaurantName    "Doubledave's Pizzaworks" ;
+        cw:serves            cw:cheese_pizza , cw:chocolate_chip_pizza .
+
+cw:12   a       cw:Itemvalue .
+
+cw:502_m_st  a  cw:Address .
+
+cw:marinara_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "10.95" , "15.95" ;
+        cw:hasValue            cw:10.95 , cw:15.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#john's_of_12th_street> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> .
+
+cw:7030  a      cw:Postcode .
+
+cw:22.5  a      cw:Itemvalue .
+
+cw:55447  a     cw:Postcode .
+
+cw:2904  a      cw:Postcode .
+
+cw:400_n_center_st  a  cw:Address .
+
+cw:west_chester  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#deli_/_bodega>
+        a       cw:categories .
+
+cw:938_n_main_st  a  cw:Address .
+
+cw:1425_gross_rd  a  cw:Address .
+
+cw:190_n_swift_rd  a  cw:Address .
+
+cw:kent  a      cw:City .
+
+cw:stinger_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza> .
+
+cw:hunan_gourmet  a          cw:Restaurant ;
+        cw:containsAdress    cw:357_us_highway_9 ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:357_us_highway_9 ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "7726" ;
+        cw:restaurantName    "Hunan Gourmet" ;
+        cw:serves            cw:tuna_pizza .
+
+cw:3.59  a      cw:Itemvalue .
+
+cw:8.79  a      cw:Itemvalue .
+
+cw:little_italy_pizza
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      cw:memphis ;
+        cw:containsState     cw:mphs ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     cw:memphis ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mphs ;
+        cw:postcode          "38104" ;
+        cw:restaurantName    "Little Italy Pizza" ;
+        cw:serves            cw:white_pizza .
+
+cw:pizza_burger  a             cw:Food , cw:menu_item ;
+        cw:amount              "8.99" , "4.49" , "9.95" , "8.95" , "3.95" ;
+        cw:hasValue            cw:9.95 , cw:4.49 , cw:3.95 , cw:8.95 , cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#carluccio's> , cw:prima_pizza , <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> .
+
+cw:75149  a     cw:Postcode .
+
+cw:gyro_pizza  a               cw:menu_item , cw:Food ;
+        cw:amount              "9.75" ;
+        cw:hasValue            cw:9.75 ;
+        cw:servedInRestaurant  cw:atheneos_greek_village_cafe .
+
+cw:ultimate_supreme_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "9" ;
+        cw:hasValue            cw:9 ;
+        cw:servedInRestaurant  cw:little_caesars_pizza .
+
+cw:mount_laurel_township
+        a       cw:state .
+
+cw:glutenfree_things  a      cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:arvada ;
+        cw:containsState     cw:co ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:arvada ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:co ;
+        cw:postcode          "80004" ;
+        cw:restaurantName    "Glutenfree Things" ;
+        cw:serves            cw:pizza_dough_balls , cw:pizza_dough_flats .
+
+cw:italian_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "23.99" ;
+        cw:hasValue            cw:23.99 ;
+        cw:servedInRestaurant  cw:the_fire_den .
+
+cw:enterprise_deli  a        cw:Restaurant ;
+        cw:containsAdress    cw:1_corporate_dr ;
+        cw:containsCity      cw:shelton ;
+        cw:containsState     cw:ct ;
+        cw:locatedInAddress  cw:1_corporate_dr ;
+        cw:locatedInCity     cw:shelton ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ct ;
+        cw:postcode          "6484" ;
+        cw:restaurantName    "Enterprise Deli" ;
+        cw:serves            cw:chicken_pizza .
+
+cw:200_e_main_cross_st
+        a       cw:Address .
+
+cw:80203  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#ralph's_grocery_deli>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:seattle ;
+        cw:containsState     cw:wa ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:seattle ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wa ;
+        cw:postcode          "98121" ;
+        cw:restaurantName    "Ralph's Grocery Deli" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> .
+
+cw:ma   a       cw:state .
+
+cw:3.5  a       cw:Itemvalue .
+
+cw:restaurantchinesechinese_restaurant
+        a       cw:categories .
+
+cw:pizza_sub  a                cw:menu_item , cw:Food ;
+        cw:amount              "3" , "" , "8.99" , "4.25" , "5.99" , "9.95" ;
+        cw:hasValue            cw:4.25 , cw:3 , cw:8.99 , cw: , cw:9.95 , cw:5.99 ;
+        cw:servedInRestaurant  cw:bravo_pizza_hollywood , <http://www.wikidata.org/entity/Q107608526> , cw:blockbuster , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> , cw:prima_pizza .
+
+cw:jones_street_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:19145  a     cw:Postcode .
+
+cw:gyro_pita_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "6.99" ;
+        cw:hasValue            cw:6.99 ;
+        cw:servedInRestaurant  cw:atheneos_greek_village_cafe .
+
+cw:paisans_pizza_-_berwyn
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:6226_w_ogden ;
+        cw:containsCity      cw:berwyn ;
+        cw:containsState     cw:il ;
+        cw:locatedInAddress  cw:6226_w_ogden ;
+        cw:locatedInCity     cw:berwyn ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:il ;
+        cw:postcode          "60402" ;
+        cw:restaurantName    "Paisans Pizza - Berwyn" ;
+        cw:serves            cw:gluten_free_pizza , <http://www.wikidata.org/entity/Q1071027> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#byop_(build_your_own_pizza)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:chicken_club_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8.79" ;
+        cw:hasValue            cw:8.79 ;
+        cw:servedInRestaurant  cw:zios_italian_kitchen_-_olathe .
+
+cw:marble_cliff  a  cw:state .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#dioli's_italian_market>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2898_reynolda_rd ;
+        cw:containsCity      cw:winston_salem ;
+        cw:containsState     cw:oldtown ;
+        cw:locatedInAddress  cw:2898_reynolda_rd ;
+        cw:locatedInCity     cw:winston_salem ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:oldtown ;
+        cw:postcode          "27106" ;
+        cw:restaurantName    "Dioli's Italian Market" ;
+        cw:serves            <http://www.wikidata.org/entity/Q1071027> , cw:meatball_pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1001_jason_pl ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     cw:il ;
+        cw:locatedInAddress  cw:1001_jason_pl ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:il ;
+        cw:postcode          "62629" ;
+        cw:restaurantName    "Antonio's Pizza" ;
+        cw:serves            cw:veggie_or_meat_deluxe_pizza , cw:deluxe_pizza , cw:supreme_deluxe_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:pizza_sub , cw:greek_pizza , cw:white_pizza .
+
+cw:19380  a     cw:Postcode .
+
+cw:90254  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "10018" ;
+        cw:restaurantName    "Burgers & Cupcakes" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q82799> , cw:tre_colori_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:marinara_pizza , cw:provencal_pizza , cw:romana_pizza , cw:pepperoni_pizza .
+
+cw:barboursville  a  cw:City .
+
+cw:9.99  a      cw:Itemvalue .
+
+cw:gourmet_meat_pizzatm
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "19.22" ;
+        cw:hasValue            cw:19.22 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:quincy_center  a  cw:state .
+
+cw:pesto_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.99" , "8.99" ;
+        cw:hasValue            cw:23.99 , cw:8.99 ;
+        cw:servedInRestaurant  cw:the_fire_den , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+cw:byo_pizza  a                cw:menu_item , cw:Food ;
+        cw:amount              "7" ;
+        cw:hasValue            cw:7 ;
+        cw:servedInRestaurant  cw:buon_cibo .
+
+cw:hot_sauce_chicken_ranch_dressing__blue_cheese
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:buffalo_chicken_pizza ;
+        cw:itemName        "Hot sauce, chicken, ranch dressing,  blue cheese" .
+
+cw:buffalo_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" , "16.95" , "17.99" , "14.25" ;
+        cw:hasValue            cw: , cw:16.95 , cw:17.99 , cw:14.25 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> , cw:milanos_pizza , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:sandwich_place  a  cw:categories .
+
+cw:mount_vernon  a  cw:City .
+
+cw:15.99  a     cw:Itemvalue .
+
+cw:201_n_main_st  a  cw:Address .
+
+cw:urbana  a    cw:City .
+
+cw:shelton  a   cw:City .
+
+cw:wellington  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#our_pizza_dough_stuffed_with_pepperoni_cheese_and_seasonings_deep_fried_to_a_golden_brown.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_fries ;
+        cw:itemName        "Our pizza dough stuffed with pepperoni, cheese and seasonings deep fried to a golden brown." .
+
+cw:95827  a     cw:Postcode .
+
+cw:baltimore  a  cw:City .
+
+cw:7.99  a      cw:Itemvalue .
+
+cw:sir_pizza  a              cw:Restaurant ;
+        cw:containsAdress    cw:madison_st ;
+        cw:containsCity      cw:madison ;
+        cw:containsState     cw:tn ;
+        cw:locatedInAddress  cw:madison_st ;
+        cw:locatedInCity     cw:madison ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tn ;
+        cw:postcode          "" ;
+        cw:restaurantName    "Sir Pizza" ;
+        cw:serves            cw:white_pizza .
+
+cw:tracy  a     cw:City .
+
+cw:grandma_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "16.25" ;
+        cw:hasValue            cw:16.25 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:11762  a     cw:Postcode .
+
+cw:stissing_house  a         cw:Restaurant ;
+        cw:containsAdress    cw:7801_s_main_st ;
+        cw:containsCity      cw:pine_plains ;
+        cw:containsState     cw:mount_ross ;
+        cw:locatedInAddress  cw:7801_s_main_st ;
+        cw:locatedInCity     cw:pine_plains ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mount_ross ;
+        cw:postcode          "12567" ;
+        cw:restaurantName    "Stissing House" ;
+        cw:serves            cw:pizza_of_the_day .
+
+cw:phila  a     cw:state .
+
+cw:pita_pizza  a               cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:madison  a   cw:City .
+
+cw:11.5  a      cw:Itemvalue .
+
+cw:317_2nd_st  a  cw:Address .
+
+cw:1818_manhattan_blvd
+        a       cw:Address .
+
+cw:peter_piper_pizza  a      cw:Restaurant ;
+        cw:containsAdress    cw:4940_e_ray_rd ;
+        cw:containsCity      cw:phoenix ;
+        cw:containsState     cw:az ;
+        cw:locatedInAddress  cw:4940_e_ray_rd ;
+        cw:locatedInCity     cw:phoenix ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:az ;
+        cw:postcode          "85044" ;
+        cw:restaurantName    "Peter Piper Pizza" ;
+        cw:serves            <http://www.wikidata.org/entity/Q11236330> .
+
+cw:13.99  a     cw:Itemvalue .
+
+cw:seven_layer_bean_dip
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:itemName        "Seven layer bean dip" .
+
+cw:901_loveland_madeira_rd
+        a       cw:Address .
+
+cw:the_fire_den  a           cw:Restaurant ;
+        cw:containsAdress    cw:1231_park_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q11236330> ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:1231_park_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q11236330> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "94501" ;
+        cw:restaurantName    "The Fire Den" ;
+        cw:serves            cw:garlic_chicken_pizza , cw:vegetarian_pizza , cw:hawaiian_pizza , cw:italian_pizza , cw:create_your_own_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pesto_sauce_pizza_(vegetarian)> , cw:bbq_chicken_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:pesto_chicken_pizza , cw:greek_chicken_pizza , <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q1071027> .
+
+cw:92677  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#khan's_bar_&_grill>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1125_h_st_ne ;
+        cw:containsCity      cw:washington ;
+        cw:containsState     cw:dc ;
+        cw:locatedInAddress  cw:1125_h_st_ne ;
+        cw:locatedInCity     cw:washington ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:dc ;
+        cw:postcode          "20002" ;
+        cw:restaurantName    "Khan's Bar & Grill" ;
+        cw:serves            cw:khans_korean_pizza .
+
+cw:3130_route_10_w  a  cw:Address .
+
+cw:cove_taco_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "19.99" ;
+        cw:hasValue            cw:19.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> .
+
+cw:captain_jean_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "17.49" ;
+        cw:hasValue            cw:17.49 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> .
+
+cw:5.99  a      cw:Itemvalue .
+
+cw:145_e_gay_st  a  cw:Address .
+
+cw:19.95  a     cw:Itemvalue .
+
+cw:20   a       cw:Itemvalue .
+
+cw:shrimp_scampi_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.5" ;
+        cw:hasValue            cw:12.5 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:8648  a      cw:Postcode .
+
+cw:ks   a       cw:state .
+
+cw:gluten_free_veg_out_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:c19  a                    cw:Restaurant ;
+        cw:containsAdress    cw:267_s_19th_st ;
+        cw:containsCity      cw:philadelphia ;
+        cw:containsState     cw:phila ;
+        cw:locatedInAddress  cw:267_s_19th_st ;
+        cw:locatedInCity     cw:philadelphia ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:phila ;
+        cw:postcode          "19103" ;
+        cw:restaurantName    "C19" ;
+        cw:serves            <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_boy_citra_pils_(4)> .
+
+cw:vegetable_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "7.99" , "" ;
+        cw:hasValue            cw:7.99 , cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza> .
+
+cw:2446  a      cw:Postcode .
+
+cw:californian_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:11.99  a     cw:Itemvalue .
+
+cw:pizza_rolls  a              cw:menu_item , cw:Food ;
+        cw:amount              "5.49" , "11.99" ;
+        cw:hasValue            cw:5.49 , cw:11.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza> .
+
+cw:harvey  a    cw:City .
+
+cw:555_soquel_ave  a  cw:Address .
+
+cw:potbelly_sandwich_shop
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q1071027> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q1071027> ;
+        cw:postcode          "60638" ;
+        cw:restaurantName    "Potbelly Sandwich Shop" ;
+        cw:serves            cw:pizza_sandwich .
+
+cw:2169  a      cw:Postcode .
+
+cw:932_s_10th_st  a  cw:Address .
+
+cw:philly_cheesesteak_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8" ;
+        cw:hasValue            cw:8 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:21030  a     cw:Postcode .
+
+cw:breaded_chicken_with_2_ounces_of_pepperoni_melted_provolone_topped_with_marinara_sauce
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:chicken_pizza ;
+        cw:itemName        "Breaded chicken with 2 ounces of pepperoni, melted provolone topped with marinara sauce" .
+
+cw:3.99  a      cw:Itemvalue .
+
+cw:with_our_homemade_sauce
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_steak ;
+        cw:itemName        "With our homemade sauce" .
+
+cw:17.49  a     cw:Itemvalue .
+
+cw:62629  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#chicken_breast_artichokes_black_olives_basil_feta_and_mozzarella_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:itemName        "Chicken breast, artichokes, black olives, basil, feta and mozzarella cheese." .
+
+cw:51101  a     cw:Postcode .
+
+cw:17.95  a     cw:Itemvalue .
+
+cw:bronx_bomber_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "14" ;
+        cw:hasValue            cw:14 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:california_pizza_kitchen
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3401_esperanza_xing , cw:10300_forest_hill_blvd ;
+        cw:containsCity      cw:austin , cw:wellington ;
+        cw:containsState     cw:village_of_wellington , cw:tx ;
+        cw:locatedInAddress  cw:3401_esperanza_xing , cw:10300_forest_hill_blvd ;
+        cw:locatedInCity     cw:austin , cw:wellington ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx , cw:village_of_wellington ;
+        cw:postcode          "78758" , "33414" ;
+        cw:restaurantName    "California Pizza Kitchen" ;
+        cw:serves            cw:white_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#harry's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:405_sea_st ;
+        cw:containsCity      cw:quincy ;
+        cw:containsState     cw:quincy_center ;
+        cw:locatedInAddress  cw:405_sea_st ;
+        cw:locatedInCity     cw:quincy ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:quincy_center ;
+        cw:postcode          "2169" ;
+        cw:restaurantName    "Harry's Pizza" ;
+        cw:serves            cw:meat_lovers_pizza .
+
+cw:bbq_chicken_pizza  a        cw:Food , cw:menu_item ;
+        cw:amount              "8.99" , "23.99" , "16.95" , "" , "16" ;
+        cw:hasValue            cw:16.95 , cw:16 , cw:23.99 , cw: , cw:8.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:the_fire_den , cw:icon_grill , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza> , <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+cw:9    a       cw:Itemvalue .
+
+cw:49519  a     cw:Postcode .
+
+cw:1665_stelton_rd  a  cw:Address .
+
+cw:small_supreme_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "5.99" ;
+        cw:hasValue            cw:5.99 ;
+        cw:servedInRestaurant  cw:bronson_strike_zone .
+
+cw:served_all_day  a       cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "Served all day" .
+
+cw:sorrentino_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "18.99" ;
+        cw:hasValue            cw:18.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:restaurantrestaurantseuropean_restaurants
+        a       cw:categories .
+
+cw:the_youghigheny_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:1.99  a      cw:Itemvalue .
+
+cw:10017  a     cw:Postcode .
+
+cw:48383  a     cw:Postcode .
+
+cw:242_harvard_st  a  cw:Address .
+
+cw:18.5  a      cw:Itemvalue .
+
+cw:truffled_egg_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "14" ;
+        cw:hasValue            cw:14 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:14_e_10th_st  a  cw:Address .
+
+cw:19   a       cw:Itemvalue .
+
+cw:wv   a       cw:state .
+
+cw:90027  a     cw:Postcode .
+
+cw:20.5  a      cw:Itemvalue .
+
+cw:cockeysville  a  cw:City .
+
+cw:148_w_river_st  a  cw:Address .
+
+cw:quincy  a    cw:City .
+
+cw:60611  a     cw:Postcode .
+
+cw:cheesesteak_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "16.95" ;
+        cw:hasValue            cw:16.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:buon_cibo  a              cw:Restaurant ;
+        cw:containsAdress    cw:2631_mcingvale_rd ;
+        cw:containsCity      cw:hernando ;
+        cw:containsState     cw:ms ;
+        cw:locatedInAddress  cw:2631_mcingvale_rd ;
+        cw:locatedInCity     cw:hernando ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ms ;
+        cw:postcode          "38632" ;
+        cw:restaurantName    "Buon Cibo" ;
+        cw:serves            cw:cheese_pizza , cw:byo_pizza , cw:pepperoni_pizza .
+
+cw:801_2nd_ave  a  cw:Address .
+
+cw:piranha_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:smoked_chicken_bbq_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16" ;
+        cw:hasValue            cw:16 ;
+        cw:servedInRestaurant  cw:icon_grill .
+
+cw:84602  a     cw:Postcode .
+
+cw:baldinelli_pizza  a       cw:Restaurant ;
+        cw:containsAdress    cw:12326_w_143rd_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     cw:il ;
+        cw:locatedInAddress  cw:12326_w_143rd_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:il ;
+        cw:postcode          "" ;
+        cw:restaurantName    "Baldinelli Pizza" ;
+        cw:serves            <http://www.wikidata.org/entity/Q1071027> , cw:pizza_bread .
+
+cw:pizza_bomba  a              cw:menu_item , cw:Food ;
+        cw:amount              "17.45" ;
+        cw:hasValue            cw:17.45 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q82799> .
+
+cw:9.75  a      cw:Itemvalue .
+
+cw:san_jose  a  cw:City .
+
+cw:23.99  a     cw:Itemvalue .
+
+cw:22_warren_st  a  cw:Address .
+
+cw:mini_pizza  a               cw:menu_item , cw:Food ;
+        cw:amount              "5.99" ;
+        cw:hasValue            cw:5.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:92584  a     cw:Postcode .
+
+cw:the_melting_pot_-_white_plains
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:30_mamaroneck_ave ;
+        cw:containsCity      cw:white_plains ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:30_mamaroneck_ave ;
+        cw:locatedInCity     cw:white_plains ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "10601" ;
+        cw:restaurantName    "The Melting Pot - White Plains" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:winston_salem  a  cw:City .
+
+cw:1.5  a       cw:Itemvalue .
+
+cw:15.75  a     cw:Itemvalue .
+
+cw:bronson  a   cw:City .
+
+cw:wyoming  a   cw:City .
+
+cw:7.29  a      cw:Itemvalue .
+
+cw:hawaiian_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "19" , "13" , "12.95" , "16.95" , "11.99" , "23.99" ;
+        cw:hasValue            cw:23.99 , cw:13 , cw:16.95 , cw:11.99 , cw:12.95 , cw:19 ;
+        cw:servedInRestaurant  cw:the_fire_den , cw:steinway_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:bravo_pizza_hollywood , <http://www.wikidata.org/entity/Q7053766> , cw:milanos_pizza .
+
+cw:775_goodman_rd_e  a  cw:Address .
+
+cw:supreme_deluxe_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.99" ;
+        cw:hasValue            cw:12.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> .
+
+cw:18_maple_st  a  cw:Address .
+
+cw:crispy_breaded_chicken_blue_cheese_and_buffalo_sauce
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:buffalo_pizza ;
+        cw:itemName        "Crispy breaded chicken, blue cheese and buffalo sauce" .
+
+cw:4    a       cw:Itemvalue .
+
+cw:7.75  a      cw:Itemvalue .
+
+cw:21.99  a     cw:Itemvalue .
+
+cw:small_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "3.99" ;
+        cw:hasValue            cw:3.99 ;
+        cw:servedInRestaurant  cw:bronson_strike_zone .
+
+cw:pizza_fries  a              cw:menu_item , cw:Food ;
+        cw:amount              "4.95" , "6.99" , "3.99" , "4.25" , "3.95" , "4.99" , "3.5" , "3.75" ;
+        cw:hasValue            cw:3.99 , cw:3.5 , cw:3.75 , cw:6.99 , cw:3.95 , cw:4.99 , cw:4.25 , cw:4.95 ;
+        cw:servedInRestaurant  cw:the_italian_oven , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#carluccio's> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tony_soprano's_pizza> , cw:prima_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:prince_pizza .
+
+cw:14   a       cw:Itemvalue .
+
+cw:1019_westgate_ave  a  cw:Address .
+
+cw:800_n_main_st  a  cw:Address .
+
+cw:23434  a     cw:Postcode .
+
+cw:with_pepperoni  a       cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_bagel ;
+        cw:itemName        "with pepperoni" .
+
+cw:1203_walnut_st  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:menifee ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:menifee ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "92584" ;
+        cw:restaurantName    "Giovanni's Pizza and Pasta" ;
+        cw:serves            <http://www.wikidata.org/entity/Q7053766> , cw:vegetarian_pizza , cw:southwest_pizza , cw:bbq_chicken_pizza , cw:breakfast_pizza , cw:hawaiin_pizza , cw:cadillac_pizza , cw:pesto_chicken_pizza , cw:pizza_bread .
+
+cw:801_saint_emanuel_st
+        a       cw:Address .
+
+cw:37.99  a     cw:Itemvalue .
+
+cw:94501  a     cw:Postcode .
+
+cw:16.95  a     cw:Itemvalue .
+
+cw:spicy_meat_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "12.95" ;
+        cw:hasValue            cw:12.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:7663  a      cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#copeland's_cheescake_bistro>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2001_saint_charles_ave ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:la ;
+        cw:locatedInAddress  cw:2001_saint_charles_ave ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:la ;
+        cw:postcode          "70130" ;
+        cw:restaurantName    "Copeland's Cheescake Bistro" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , cw:great_tasting_cheese_pizza .
+
+cw:3.29  a      cw:Itemvalue .
+
+cw:pizza_placetake_out_restaurantsrestaurantssandwich_shopspizza
+        a       cw:categories .
+
+cw:large_pizza_cheese
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16.99" ;
+        cw:hasValue            cw:16.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:3.75  a      cw:Itemvalue .
+
+cw:8.95  a      cw:Itemvalue .
+
+cw:pizza_placeitalian_restaurantrestaurantspizza_place_and_italian_restaurant
+        a       cw:categories .
+
+cw:85225  a     cw:Postcode .
+
+cw:417_12th_st  a  cw:Address .
+
+cw:zios_italian_kitchen_-_olathe
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:olathe ;
+        cw:containsState     cw:ks ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:olathe ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ks ;
+        cw:postcode          "66062" ;
+        cw:restaurantName    "Zios Italian Kitchen - Olathe" ;
+        cw:serves            cw:barbecue_chicken_pizza , cw:california_pizza , cw:pepperoni_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:pizza_mia , cw:artichoke_chicken_pizza , cw:chicken_club_pizza .
+
+cw:27106  a     cw:Postcode .
+
+cw:8.5  a       cw:Itemvalue .
+
+cw:italian_restaurantitalian_restaurant_pizza_place_and_wine_barrestaurant
+        a       cw:categories .
+
+cw:moses_lake  a  cw:City .
+
+cw:pizza_bruschetta  a         cw:menu_item , cw:Food ;
+        cw:amount              "7.75" ;
+        cw:hasValue            cw:7.75 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:21157  a     cw:Postcode .
+
+cw:kingsgate  a  cw:state .
+
+cw:pork_tenderloin_pizzaiola
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mario's_-_staten_island> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tony_soprano's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3747_church_rd ;
+        cw:containsCity      cw:mount_laurel ;
+        cw:containsState     cw:mount_laurel_township ;
+        cw:locatedInAddress  cw:3747_church_rd ;
+        cw:locatedInCity     cw:mount_laurel ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mount_laurel_township ;
+        cw:postcode          "8054" ;
+        cw:restaurantName    "Tony Soprano's Pizza" ;
+        cw:serves            cw:pizza_fries .
+
+cw:sushi_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "10.95" ;
+        cw:hasValue            cw:10.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:14.49  a     cw:Itemvalue .
+
+cw:715_lenoir_rhyne_blvd_s_e
+        a       cw:Address .
+
+cw:west_river_cafe  a        cw:Restaurant ;
+        cw:containsAdress    cw:148_w_river_st ;
+        cw:containsCity      cw:providence ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:148_w_river_st ;
+        cw:locatedInCity     cw:providence ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "2904" ;
+        cw:restaurantName    "West River Cafe" ;
+        cw:serves            cw:pizza_combo .
+
+cw:spicy_buffalo_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "20.5" ;
+        cw:hasValue            cw:20.5 ;
+        cw:servedInRestaurant  cw:pizza_bistro .
+
+cw:14.95  a     cw:Itemvalue .
+
+cw:19147  a     cw:Postcode .
+
+cw:6.49  a      cw:Itemvalue .
+
+cw:pizza_white  a              cw:menu_item , cw:Food ;
+        cw:amount              "18" ;
+        cw:hasValue            cw:18 ;
+        cw:servedInRestaurant  cw:steinway_pizza .
+
+cw:houston  a   cw:City .
+
+cw:satsuma  a                cw:Restaurant ;
+        cw:containsAdress    cw:1707_delaware_ave ;
+        cw:containsCity      cw:wilmington ;
+        cw:containsState     cw:de ;
+        cw:locatedInAddress  cw:1707_delaware_ave ;
+        cw:locatedInCity     cw:wilmington ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:de ;
+        cw:postcode          "19806" ;
+        cw:restaurantName    "Satsuma" ;
+        cw:serves            cw:tuna_pizza .
+
+cw:littleton  a  cw:City .
+
+cw:3060_naglee_rd  a  cw:Address .
+
+cw:1.75  a      cw:Itemvalue .
+
+cw:6.95  a      cw:Itemvalue .
+
+cw:large_the_works_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "15" ;
+        cw:hasValue            cw:15 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#keymakerslocks_&_locksmiths>
+        a       cw:categories .
+
+cw:with_fresh_fruit  a     cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza ;
+        cw:itemName        "With fresh fruit" .
+
+cw:pizza_dipping_sauce_cup
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "0.59" ;
+        cw:hasValue            cw:0.59 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:irvine  a    cw:City .
+
+cw:61801  a     cw:Postcode .
+
+cw:veggie_supreme_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.5" ;
+        cw:hasValue            cw:23.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> .
+
+cw:12.49  a     cw:Itemvalue .
+
+cw:chinese_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "2.5" ;
+        cw:hasValue            cw:2.5 ;
+        cw:servedInRestaurant  cw:ming_garden_cocktails_chinese_restaurant .
+
+cw:cafe_veloce  a            cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:kirkland ;
+        cw:containsState     cw:kingsgate ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:kirkland ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:kingsgate ;
+        cw:postcode          "98034" ;
+        cw:restaurantName    "Cafe Veloce" ;
+        cw:serves            cw:moped_pizza .
+
+cw:1231_park_st  a  cw:Address .
+
+cw:pepperoni_pizza_pretzel
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "1.5" ;
+        cw:hasValue            cw:1.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+cw:12.95  a     cw:Itemvalue .
+
+cw:usd  a       cw:Currency .
+
+cw:99709  a     cw:Postcode .
+
+cw:4.49  a      cw:Itemvalue .
+
+cw:111_lawrence_rd  a  cw:Address .
+
+cw:grilled_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "10" ;
+        cw:hasValue            cw:10 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:4.95  a      cw:Itemvalue .
+
+cw:state  a     cw:state .
+
+cw:ming_garden_cocktails_chinese_restaurant
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:4138_ogletown_stanton_rd ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:de ;
+        cw:locatedInAddress  cw:4138_ogletown_stanton_rd ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:de ;
+        cw:postcode          "19713" ;
+        cw:restaurantName    "Ming Garden Cocktails Chinese Restaurant" ;
+        cw:serves            cw:chinese_pizza .
+
+cw:prosciutto_arugula_artisan_crust_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.99" ;
+        cw:hasValue            cw:12.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:pizza_dough_balls  a        cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  cw:glutenfree_things .
+
+cw:47905  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2300_s_16th_st ;
+        cw:containsCity      cw:philadelphia ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:2300_s_16th_st ;
+        cw:locatedInCity     cw:philadelphia ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "19145" ;
+        cw:restaurantName    "Mi Pal's Deli" ;
+        cw:serves            cw:pizza_steak , cw:pizza_burger , cw:pepperoni_pizza_burger , cw:pepperoni_pizza_steak , cw:pizza_roll , cw:pepperoni_chicken_pizza_steak , cw:pizza_pretzel , cw:chicken_pizza_steak , cw:pepperoni_pizza_pretzel , cw:pizza_fries .
+
+cw:1300_raritan_rd  a  cw:Address .
+
+cw:chicken_supreme_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "18.6" ;
+        cw:hasValue            cw:18.6 ;
+        cw:servedInRestaurant  cw:kennebunk_house_of_pizza .
+
+cw:staten_island  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#restaurantsbars_&_pubs>
+        a       cw:categories .
+
+cw:bloomfield  a  cw:City .
+
+cw:cheese_steak_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16.95" , "17" ;
+        cw:hasValue            cw:16.95 , cw:17 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> , cw:town_pub .
+
+cw:4921_state_road_26_e
+        a       cw:Address .
+
+cw:10.95  a     cw:Itemvalue .
+
+cw:1295_grandview_ave
+        a       cw:Address .
+
+cw:98011  a     cw:Postcode .
+
+cw:keyme  a                  cw:Restaurant ;
+        cw:containsAdress    cw:21100_91st_pl_s ;
+        cw:containsCity      cw:kent ;
+        cw:containsState     cw:wa ;
+        cw:locatedInAddress  cw:21100_91st_pl_s ;
+        cw:locatedInCity     cw:kent ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wa ;
+        cw:postcode          "98031" ;
+        cw:restaurantName    "Keyme" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> .
+
+cw:los_feliz  a  cw:state .
+
+cw:2.95  a      cw:Itemvalue .
+
+cw:atheneos_greek_village_cafe
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1425_gross_rd ;
+        cw:containsCity      cw:mesquite ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:1425_gross_rd ;
+        cw:locatedInCity     cw:mesquite ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "75149" ;
+        cw:restaurantName    "Atheneos Greek Village Cafe" ;
+        cw:serves            cw:cheese_pizza , cw:gyro_pita_pizza , cw:gyro_pizza .
+
+cw:pizza_dough  a              cw:menu_item , cw:Food ;
+        cw:amount              "2.5" ;
+        cw:hasValue            cw:2.5 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:2001_saint_charles_ave
+        a       cw:Address .
+
+cw:1909_e_ray_rd  a  cw:Address .
+
+cw:wausau  a    cw:City .
+
+cw:3401_esperanza_xing
+        a       cw:Address .
+
+cw:gluten_free_pepperoni_thin_crust_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "11.99" ;
+        cw:hasValue            cw:11.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:pizzaroni  a                cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q1071027> .
+
+cw:luzerne  a   cw:City .
+
+cw:phoenix  a   cw:City .
+
+cw:tuna_pizza  a               cw:menu_item , cw:Food ;
+        cw:amount              "12" ;
+        cw:hasValue            cw:12 ;
+        cw:servedInRestaurant  cw:hunan_gourmet , cw:satsuma .
+
+cw:longview  a  cw:state .
+
+cw:i_love_bagels  a          cw:Restaurant ;
+        cw:containsAdress    cw:28985_golden_lantern ;
+        cw:containsCity      cw:laguna_niguel ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:28985_golden_lantern ;
+        cw:locatedInCity     cw:laguna_niguel ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "92677" ;
+        cw:restaurantName    "I Love Bagels" ;
+        cw:serves            cw:pizza_bagel .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#italian_restaurantrestaurantsrestaurant_equipment_&_supplies_retail>
+        a       cw:categories .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#loaded_with_extra_pepperoni_and_extra_mozzarella_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:large_pepperoni_plus_pizza ;
+        cw:itemName        "Loaded with Extra Pepperoni and Extra Mozzarella Cheese." .
+
+cw:capelli_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "14" ;
+        cw:hasValue            cw:14 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:11367  a     cw:Postcode .
+
+cw:pizza_placepizzarestaurants
+        a       cw:categories .
+
+cw:pizza_place_and_italian_restaurant
+        a       cw:categories .
+
+cw:mo   a       cw:state .
+
+cw:kids_size_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "4.39" ;
+        cw:hasValue            cw:4.39 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:sturbridge  a  cw:City .
+
+cw:st_albans  a  cw:state .
+
+cw:midtown  a   cw:state .
+
+cw:grove  a     cw:state .
+
+cw:any_topping_extra_charge_will_be_applied
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:adult_cheese_pizza ;
+        cw:itemName        "Any topping extra charge will be applied" .
+
+cw:gourmet_chicken_ranch_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "18.76" ;
+        cw:hasValue            cw:18.76 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:85044  a     cw:Postcode .
+
+cw:562_broad_st  a  cw:Address .
+
+cw:21221  a     cw:Postcode .
+
+cw:55369  a     cw:Postcode .
+
+cw:16.25  a     cw:Itemvalue .
+
+cw:1400_county_road_101_n
+        a       cw:Address .
+
+cw:seafood_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "19.99" , "17.95" ;
+        cw:hasValue            cw:19.99 , cw:17.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:18015  a     cw:Postcode .
+
+cw:1431_plaza_pl  a  cw:Address .
+
+cw:5365_alton_pkwy  a  cw:Address .
+
+cw:blockbuster  a            cw:Restaurant ;
+        cw:containsAdress    cw:1310_n_w_23rd_ave ;
+        cw:containsCity      cw:gainesville ;
+        cw:containsState     <http://www.wikidata.org/entity/Q1071027> ;
+        cw:locatedInAddress  cw:1310_n_w_23rd_ave ;
+        cw:locatedInCity     cw:gainesville ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q1071027> ;
+        cw:postcode          "32605" ;
+        cw:restaurantName    "Blockbuster" ;
+        cw:serves            cw:pizza_sub .
+
+cw:2.76  a      cw:Itemvalue .
+
+cw:43055  a     cw:Postcode .
+
+cw:wich_place  a  cw:categories .
+
+cw:22.95  a     cw:Itemvalue .
+
+cw:3610_route_378  a  cw:Address .
+
+cw:maitland  a  cw:City .
+
+cw:ca   a       cw:state .
+
+cw:omaha  a     cw:City .
+
+cw:14.25  a     cw:Itemvalue .
+
+cw:elmhurst  a  cw:state .
+
+cw:8385_w_21st_st_n  a  cw:Address .
+
+cw:76092  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#spicy_bleu_cheese_sauce_with_steak_and_chunks_of_breaded_chicken_cheddar_and_mozzarella_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:stinger_pizza ;
+        cw:itemName        "Spicy Bleu Cheese sauce with steak and chunks of breaded chicken, cheddar and mozzarella cheese." .
+
+cw:7726  a      cw:Postcode .
+
+cw:9822_libra_ave  a  cw:Address .
+
+cw:roadhouse_cafe  a         cw:Restaurant ;
+        cw:containsAdress    cw:478_south_st ;
+        cw:containsCity      cw:hyannis ;
+        cw:containsState     cw:ma ;
+        cw:locatedInAddress  cw:478_south_st ;
+        cw:locatedInCity     cw:hyannis ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ma ;
+        cw:postcode          "2601" ;
+        cw:restaurantName    "Roadhouse Cafe" ;
+        cw:serves            cw:pepperoni_pizza , cw:cheese_pizza .
+
+cw:43212  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      cw:buffalo ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     cw:buffalo ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "14224" ;
+        cw:restaurantName    "Brando's Pizza" ;
+        cw:serves            cw:chicken_parmesan_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:pizza_logs , cw:white_pizza_sub , cw:stinger_pizza .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#lucky's_pub>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:801_saint_emanuel_st ;
+        cw:containsCity      cw:houston ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:801_saint_emanuel_st ;
+        cw:locatedInCity     cw:houston ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "77003" ;
+        cw:restaurantName    "Lucky's Pub" ;
+        cw:serves            cw:create_your_own_pizza .
+
+cw:78613  a     cw:Postcode .
+
+cw:7801_s_main_st  a  cw:Address .
+
+cw:restaurantitalian_restaurantitalian_restaurant_east_village
+        a       cw:categories .
+
+cw:country_bagel_bakery
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:145_e_gay_st ;
+        cw:containsCity      cw:west_chester ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:145_e_gay_st ;
+        cw:locatedInCity     cw:west_chester ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "19380" , "" ;
+        cw:restaurantName    "Country Bagel Bakery" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , cw:pizza_bagel_with_pepperoni , cw:pizza_bagel , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_bagel_(plain)> .
+
+cw:337_n_shore_dr  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#oh'_brian's_on_the_green>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1300_raritan_rd ;
+        cw:containsCity      cw:clark ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:1300_raritan_rd ;
+        cw:locatedInCity     cw:clark ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "7066" ;
+        cw:restaurantName    "Oh' Brian's on the Green" ;
+        cw:serves            cw:white_pizza , cw:the_reuben_pizza .
+
+cw:29671  a     cw:Postcode .
+
+cw:4.89  a      cw:Itemvalue .
+
+cw:cheese_pizza  a             cw:Food , cw:menu_item ;
+        cw:amount              "1.42" , "12.99" , "" , "8.95" , "18.95" , "5.99" , "11.95" , "13.99" , "10.99" , "6.99" , "7.99" , "10.95" , "4.75" , "3" , "12.5" , "6.95" , "5" , "17" ;
+        cw:hasValue            cw:7.99 , cw:11.95 , cw:5 , cw:13.99 , cw:3 , cw:6.99 , cw:18.95 , cw:4.75 , cw:6.95 , cw:12.99 , cw:1.42 , cw:10.99 , cw:17 , cw:10.95 , cw:8.95 , cw: , cw:12.5 , cw:5.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizza_works> , <http://www.wikidata.org/entity/Q1071027> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza> , cw:little_pizza_paradise , <http://www.wikidata.org/entity/Q7053766> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> , cw:pie_in_the_sky , <http://www.wikidata.org/entity/Q107608526> , cw:oceano_bistro_-_clayton , cw:roadhouse_cafe , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizzaworks> , cw:buon_cibo , cw:atheneos_greek_village_cafe , cw:bravo_pizza_hollywood .
+
+cw:12.25  a     cw:Itemvalue .
+
+cw:623_highland_ave  a  cw:Address .
+
+cw:austin  a    cw:City .
+
+cw:pizza_placepizzarestaurantstake_out_restaurantsfast_food_restaurantsitalian_restaurantsfamily_style_restaurants
+        a       cw:categories .
+
+cw:gluten_free_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  cw:paisans_pizza_-_berwyn .
+
+cw:4.25  a      cw:Itemvalue .
+
+cw:saddle_brook  a  cw:City .
+
+cw:white_pizza  a              cw:Food , cw:menu_item ;
+        cw:amount              "8.99" , "10" , "13" , "14" , "8.95" , "15.95" , "" , "16.24" , "11.95" , "18.35" , "18.99" , "13.99" , "12" , "16.99" , "11.5" , "12.49" ;
+        cw:hasValue            cw:13.99 , cw:13 , cw:11.95 , cw:10 , cw:14 , cw: , cw:11.5 , cw:16.24 , cw:8.99 , cw:18.99 , cw:8.95 , cw:15.95 , cw:18.35 , cw:16.99 , cw:12 , cw:12.49 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:california_pizza_kitchen , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#oh'_brian's_on_the_green> , <http://www.wikidata.org/entity/Q11236330> , cw:sir_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:little_italy_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#joey's_n_y_pizza> , cw:prima_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> , cw:milanos_pizza , cw:martinizing .
+
+cw:302_e_12th_st  a  cw:Address .
+
+cw:madison_st  a  cw:Address .
+
+cw:pizza_blanca  a             cw:menu_item , cw:Food ;
+        cw:amount              "18.5" ;
+        cw:hasValue            cw:18.5 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q82799> .
+
+cw:meat_eaters_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "8" ;
+        cw:hasValue            cw:8 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:philly_cheese_steak_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> .
+
+cw:prince_pizza  a           cw:Restaurant ;
+        cw:containsAdress    cw:22507_plymouth_rd ;
+        cw:containsCity      cw:redford ;
+        cw:containsState     cw:mi ;
+        cw:locatedInAddress  cw:22507_plymouth_rd ;
+        cw:locatedInCity     cw:redford ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mi ;
+        cw:postcode          "48239" ;
+        cw:restaurantName    "Prince Pizza" ;
+        cw:serves            cw:pizza__burger , cw:pizza_fries .
+
+cw:133_back_river_neck_rd
+        a       cw:Address .
+
+cw:eggplant_parmigiana_chicken_parmigiana_and_pepperoni_rolls
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_rolls ;
+        cw:itemName        "Eggplant Parmigiana, Chicken Parmigiana, and Pepperoni Rolls" .
+
+cw:4940_e_ray_rd  a  cw:Address .
+
+cw:89052  a     cw:Postcode .
+
+cw:white_pizza_sub  a          cw:menu_item , cw:Food ;
+        cw:amount              "7.49" ;
+        cw:hasValue            cw:7.49 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza> .
+
+cw:43050  a     cw:Postcode .
+
+cw:regular_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "19" ;
+        cw:hasValue            cw:19 ;
+        cw:servedInRestaurant  cw:steinway_pizza .
+
+cw:7066  a      cw:Postcode .
+
+cw:10300_forest_hill_blvd
+        a       cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#with_two_toppings_sauce_and_mozzarella.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "With two toppings, sauce and mozzarella." .
+
+cw:16   a       cw:Itemvalue .
+
+cw:san_diego  a  cw:City .
+
+cw:76248  a     cw:Postcode .
+
+cw:d._vino_italian_food_and_wine_bar_-_monte_carlo
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "89109" ;
+        cw:restaurantName    "D. Vino Italian Food and Wine Bar - Monte Carlo" ;
+        cw:serves            cw:caprese_pizza .
+
+cw:little_caesars_pizza
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2619_red_bluff_kroger_jct ;
+        cw:containsCity      cw:pasadena ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:2619_red_bluff_kroger_jct ;
+        cw:locatedInCity     cw:pasadena ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "77506" ;
+        cw:restaurantName    "Little Caesars Pizza" ;
+        cw:serves            cw:3_meat_treat_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:ultimate_supreme_pizza .
+
+cw:wood_fire_grilled_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "15" ;
+        cw:hasValue            cw:15 ;
+        cw:servedInRestaurant  cw:icon_grill .
+
+cw:rt_114  a    cw:Address .
+
+cw:veggie_or_meat_deluxe_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.99" ;
+        cw:hasValue            cw:12.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> .
+
+cw:chicken_parmigiana_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "16.95" , "19.95" ;
+        cw:hasValue            cw:16.95 , cw:19.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:h.o.g._pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "19.99" ;
+        cw:hasValue            cw:19.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> .
+
+cw:berlin_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "8.75" ;
+        cw:hasValue            cw:8.75 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:15950_eureka_rd  a  cw:Address .
+
+cw:essex  a     cw:City .
+
+cw:5142_hollywood_blvd
+        a       cw:Address .
+
+cw:43105  a     cw:Postcode .
+
+cw:100_charlton_rd  a  cw:Address .
+
+cw:3747_church_rd  a  cw:Address .
+
+cw:50a  a       cw:Address .
+
+cw:pizza_placetake_out_restaurantsrestaurantspizza
+        a       cw:categories .
+
+cw:burlington  a  cw:City .
+
+cw:me   a       cw:state .
+
+cw:10304  a     cw:Postcode .
+
+cw:uptown  a    cw:state .
+
+cw:suffolk  a   cw:City .
+
+cw:margarita_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "18.99" ;
+        cw:hasValue            cw:18.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#joey's_n_y_pizza> .
+
+cw:italian_restaurantrestaurant
+        a       cw:categories .
+
+cw:70058  a     cw:Postcode .
+
+cw:1.2  a       cw:Itemvalue .
+
+cw:cascade_village_mall_across_from_target
+        a       cw:Address .
+
+cw:ga   a       cw:state .
+
+cw:8054  a      cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#ton's_drive-in>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:101_w_main_st ;
+        cw:containsCity      cw:broussard ;
+        cw:containsState     cw:la ;
+        cw:locatedInAddress  cw:101_w_main_st ;
+        cw:locatedInCity     cw:broussard ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:la ;
+        cw:postcode          "70518" ;
+        cw:restaurantName    "Ton's Drive-in" ;
+        cw:serves            <http://www.wikidata.org/entity/Q1071027> .
+
+cw:2619_red_bluff_kroger_jct
+        a       cw:Address .
+
+cw:create_your_own_pizza
+        a                      cw:Food , cw:menu_item ;
+        cw:amount              "9.95" , "" ;
+        cw:hasValue            cw:9.95 , cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#uncle_john's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#lucky's_pub> , cw:the_fire_den , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza> .
+
+cw:butter_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12" ;
+        cw:hasValue            cw:12 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q82799> .
+
+cw:ut   a       cw:state .
+
+cw:city  a      cw:City .
+
+cw:38632  a     cw:Postcode .
+
+cw:233_broadway  a  cw:Address .
+
+cw:veggie_combo_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.5" ;
+        cw:hasValue            cw:23.5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> .
+
+cw:pizza_place  a  cw:categories .
+
+cw:32605  a     cw:Postcode .
+
+cw:130_town_center_rd
+        a       cw:Address .
+
+cw:11   a       cw:Itemvalue .
+
+cw:caprese_pizza  a            cw:Food , cw:menu_item ;
+        cw:amount              "14" , "18.99" , "20" ;
+        cw:hasValue            cw:20 , cw:14 , cw:18.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:d._vino_italian_food_and_wine_bar_-_monte_carlo , cw:steinway_pizza .
+
+cw:63010  a     cw:Postcode .
+
+cw:addison  a   cw:City .
+
+cw:babycorn_butter_red_peppers_topped_with_mozzarella
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:babycorn_pizza ;
+        cw:itemName        "Babycorn, Butter, red peppers, topped with mozzarella" .
+
+cw:173_ludlow_st  a  cw:Address .
+
+cw:92604  a     cw:Postcode .
+
+cw:15425  a     cw:Postcode .
+
+cw:98101  a     cw:Postcode .
+
+cw:hernando  a  cw:City .
+
+cw:19.22  a     cw:Itemvalue .
+
+cw:11103  a     cw:Postcode .
+
+cw:1876_black_rock_tpke
+        a       cw:Address .
+
+cw:2631_mcingvale_rd  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#salerno's_pizza_restaurant>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:19_kelly_st ;
+        cw:containsCity      cw:luzerne ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:19_kelly_st ;
+        cw:locatedInCity     cw:luzerne ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "18709" ;
+        cw:restaurantName    "Salerno's Pizza Restaurant" ;
+        cw:serves            cw:chicken_wing_pizza , <http://www.wikidata.org/entity/Q82799> .
+
+cw:66062  a     cw:Postcode .
+
+cw:il   a       cw:state .
+
+cw:18709  a     cw:Postcode .
+
+cw:river_town_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "10" ;
+        cw:hasValue            cw:10 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:chicken_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "5.25" ;
+        cw:hasValue            cw:5.25 ;
+        cw:servedInRestaurant  cw:enterprise_deli .
+
+cw:pie_in_the_sky  a         cw:Restaurant ;
+        cw:containsAdress    cw:267_swanton_rd ;
+        cw:containsCity      cw:saint_albans ;
+        cw:containsState     cw:st_albans ;
+        cw:locatedInAddress  cw:267_swanton_rd ;
+        cw:locatedInCity     cw:saint_albans ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:st_albans ;
+        cw:postcode          "5478" ;
+        cw:restaurantName    "Pie In The Sky" ;
+        cw:serves            cw:cheese_pizza .
+
+cw:16501  a     cw:Postcode .
+
+cw:80202  a     cw:Postcode .
+
+cw:23.5  a      cw:Itemvalue .
+
+cw:italiano_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+<http://www.wikidata.org/entity/Q134121>
+        a                  cw:Ingredient , cw:state ;
+        cw:isIngredientOf  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#monte_carlo_pizza_(white)> ;
+        cw:itemName        "Chicken breast, portabella mushrooms, broccoli, olive oil, basil, ricotta and mozzarella cheese." .
+
+cw:cheese_or_pepperoni
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:whole_pizza , <http://www.wikidata.org/entity/Q107608526> , <http://www.wikidata.org/entity/Q7053766> ;
+        cw:itemName        "Cheese or Pepperoni" , "Cheese or pepperoni" .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tre_restaurant_&_wine_bar>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:173_ludlow_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInAddress  cw:173_ludlow_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    <http://www.wikidata.org/entity/Q82799> ;
+        cw:postcode          "10002" ;
+        cw:restaurantName    "Tre Restaurant & Wine Bar" ;
+        cw:serves            cw:vegetarian_pizza .
+
+cw:pepperoni_marinara_garlic_seasoning_and_parmesan_cheese
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza ;
+        cw:itemName        "Pepperoni, marinara, garlic, seasoning and parmesan cheese" .
+
+cw:pizza_skins  a              cw:Food , cw:menu_item ;
+        cw:amount              "9.99" , "2.99" , "" ;
+        cw:hasValue            cw:9.99 , cw: , cw:2.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:brothers_2 .
+
+cw:broad_street_cafe  a      cw:Restaurant ;
+        cw:containsAdress    cw:562_broad_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q82799> ;
+        cw:containsState     cw:midtown ;
+        cw:locatedInAddress  cw:562_broad_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q82799> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:midtown ;
+        cw:postcode          "7102" ;
+        cw:restaurantName    "Broad Street Cafe" ;
+        cw:serves            cw:vegan_pizza , cw:broad_street_cheese_pizza , cw:pizza_bianca .
+
+cw:spagio  a                 cw:Restaurant ;
+        cw:containsAdress    cw:1295_grandview_ave ;
+        cw:containsCity      cw:columbus ;
+        cw:containsState     cw:marble_cliff ;
+        cw:locatedInAddress  cw:1295_grandview_ave ;
+        cw:locatedInCity     cw:columbus ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:marble_cliff ;
+        cw:postcode          "43212" ;
+        cw:restaurantName    "Spagio" ;
+        cw:serves            cw:garden_pizza .
+
+cw:meat_pizza  a               cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#imo's_pizza> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#bbq_sauce_grilled_chicken_breast_cheddar_and_mozzarella.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:bbq_chicken_pizza ;
+        cw:itemName        "BBQ sauce, grilled chicken breast, cheddar and mozzarella." .
+
+cw:adult_cheese_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "9" ;
+        cw:hasValue            cw:9 ;
+        cw:servedInRestaurant  cw:walnut_grille .
+
+cw:315_s_college_mall_rd
+        a       cw:Address .
+
+cw:buffalo_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> .
+
+cw:13.39  a     cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#1_each_(149.18_g)>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pizza_bagel ;
+        cw:itemName        "1 each (149.18 g)" .
+
+cw:19.99  a     cw:Itemvalue .
+
+cw:artichoke_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8.79" ;
+        cw:hasValue            cw:8.79 ;
+        cw:servedInRestaurant  cw:zios_italian_kitchen_-_olathe .
+
+cw:1125_h_st_ne  a  cw:Address .
+
+cw:wilmington  a  cw:City .
+
+cw:danvers  a   cw:City .
+
+cw:44_n_brentwood  a  cw:Address .
+
+cw:raugust  a   cw:state .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#restaurantstexas_(tx)mesquitemesquite_restaurantsgreek_restaurantrestaurant>
+        a       cw:categories .
+
+cw:3480_s_carrier_pkwy
+        a       cw:Address .
+
+cw:8_pizza_points  a       cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:itemName        "8 Pizza Points" .
+
+cw:pittsburgh  a  cw:City .
+
+cw:14224  a     cw:Postcode .
+
+cw:pizzarestaurantspizza_place
+        a       cw:categories .
+
+cw:wi   a       cw:state .
+
+cw:4.5  a       cw:Itemvalue .
+
+cw:17.99  a     cw:Itemvalue .
+
+cw:cheesy_pita_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#east_coast_wings_&_grill> .
+
+cw:1923  a      cw:Postcode .
+
+cw:steak_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "16.99" ;
+        cw:hasValue            cw:16.99 ;
+        cw:servedInRestaurant  cw:prima_pizza .
+
+cw:restaurant  a  cw:categories .
+
+cw:pizza_logs  a               cw:Food , cw:menu_item ;
+        cw:amount              "" , "4.99" , "5.99" ;
+        cw:hasValue            cw:4.99 , cw:5.99 , cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza> , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:8.59  a      cw:Itemvalue .
+
+cw:pizza_combo  a              cw:menu_item , cw:Food ;
+        cw:amount              "4.95" ;
+        cw:hasValue            cw:4.95 ;
+        cw:servedInRestaurant  cw:west_river_cafe .
+
+cw:va   a       cw:state .
+
+cw:berwyn  a    cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mozzarella_cheese_marinara_and_basil.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:itemName        "Mozzarella cheese, marinara and basil." .
+
+cw:spinach_artichoke_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "15" ;
+        cw:hasValue            cw:15 ;
+        cw:servedInRestaurant  cw:icon_grill .
+
+cw:70518  a     cw:Postcode .
+
+cw:king_of_prussia  a  cw:City .
+
+cw:denver  a    cw:City .
+
+cw:16.2  a      cw:Itemvalue .
+
+cw:115_w_main_st  a  cw:Address .
+
+cw:seattle  a   cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#luke's_locker>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:9595_six_pines_dr ;
+        cw:containsCity      cw:spring ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:9595_six_pines_dr ;
+        cw:locatedInCity     cw:spring ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "77380" ;
+        cw:restaurantName    "Luke's Locker" ;
+        cw:serves            cw:pizza_con_uovo_fritto .
+
+cw:1803  a      cw:Postcode .
+
+cw:menu_item  a                cw:menu_item , cw:Food ;
+        cw:amount              "item value" ;
+        cw:hasValue            cw:item_value ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q11236330> .
+
+cw:tx   a       cw:state .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#1_each_(324.00_g)>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:pepperoni_pizza ;
+        cw:itemName        "1 each (324.00 g)" .
+
+cw:gluten_free_veggie_thin_crust_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "11.49" ;
+        cw:hasValue            cw:11.49 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:mount_laurel  a  cw:City .
+
+cw:10003  a     cw:Postcode .
+
+cw:1.85  a      cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#(two_toppings_each)_60_wings_and_four_2_liters_of_soda.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  <http://www.wikidata.org/entity/Q1071027> ;
+        cw:itemName        "(two toppings each), 60 Wings and Four 2 liters of Soda." .
+
+cw:grilled_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "7.99" ;
+        cw:hasValue            cw:7.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#suraya's_-_grill_and_fried_chicken> .
+
+cw:spinach_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:chicken_verde_artisan_crust_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.49" ;
+        cw:hasValue            cw:12.49 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:az   a       cw:state .
+
+cw:45140  a     cw:Postcode .
+
+cw:southgate  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#monte_carlo_pizza_(white)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:15212  a     cw:Postcode .
+
+cw:redford  a   cw:City .
+
+cw:the_white_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "13.39" ;
+        cw:hasValue            cw:13.39 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#doubledave's_pizza_works>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3505_a_longmire_dr ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsState     cw:tx ;
+        cw:locatedInAddress  cw:3505_a_longmire_dr ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:tx ;
+        cw:postcode          "77845" ;
+        cw:restaurantName    "Doubledave's Pizza Works" ;
+        cw:serves            cw:cheese_pizza , cw:chocolate_chip_pizza .
+
+cw:pierogi_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:oldtown  a   cw:state .
+
+cw:ct   a       cw:state .
+
+cw:4.59  a      cw:Itemvalue .
+
+cw:pizza_primavera  a          cw:menu_item , cw:Food ;
+        cw:amount              "18.99" , "16" ;
+        cw:hasValue            cw:18.99 , cw:16 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> , cw:steinway_pizza .
+
+cw:28985_golden_lantern
+        a       cw:Address .
+
+cw:southlake  a  cw:City .
+
+cw:200_e_chestnut_st  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tascali's_decades_pasta_&_grill>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:6007_us_60_e ;
+        cw:containsCity      cw:barboursville ;
+        cw:containsState     cw:wv ;
+        cw:locatedInAddress  cw:6007_us_60_e ;
+        cw:locatedInCity     cw:barboursville ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wv ;
+        cw:postcode          "25504" ;
+        cw:restaurantName    "Tascali's Decades Pasta & Grill" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> , cw:pizza_bread .
+
+cw:12.5  a      cw:Itemvalue .
+
+cw:olathe  a    cw:City .
+
+cw:6607_glenway_ave  a  cw:Address .
+
+cw:80007  a     cw:Postcode .
+
+cw:6.7  a       cw:Itemvalue .
+
+cw:28602  a     cw:Postcode .
+
+cw:pizza_con_formaggio
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:provencal_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "15.95" ;
+        cw:hasValue            cw:15.95 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> .
+
+cw:63105  a     cw:Postcode .
+
+cw:burger_joint_and_cupcake_shop
+        a       cw:categories .
+
+cw:restaurantsitalian_restaurantspizzapizza_place
+        a       cw:categories .
+
+cw:large_pepperoni_plus_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12" ;
+        cw:hasValue            cw:12 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pepperoni_sausage_bacon_meatball_and_cheese.>
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:meat_lovers_pizza ;
+        cw:itemName        "Pepperoni, sausage, bacon, meatball and cheese." .
+
+cw:2.59  a      cw:Itemvalue .
+
+cw:8    a       cw:Itemvalue .
+
+cw:osseo  a     cw:City .
+
+cw:pizza_placerestaurant
+        a       cw:categories .
+
+cw:valley_lahvosh_baking
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:502_m_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q1071027> ;
+        cw:containsState     cw:ca ;
+        cw:locatedInAddress  cw:502_m_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q1071027> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ca ;
+        cw:postcode          "" ;
+        cw:restaurantName    "Valley Lahvosh Baking" ;
+        cw:serves            <http://www.wikidata.org/entity/Q107608526> .
+
+cw:the_reuben_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "13" ;
+        cw:hasValue            cw:13 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#oh'_brian's_on_the_green> .
+
+cw:97701  a     cw:Postcode .
+
+cw:18   a       cw:Itemvalue .
+
+cw:pizza_of_the_day  a         cw:menu_item , cw:Food ;
+        cw:amount              "" , "8.99" ;
+        cw:hasValue            cw: , cw:8.99 ;
+        cw:servedInRestaurant  cw:stissing_house , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:9595_six_pines_dr  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1909_e_ray_rd ;
+        cw:containsCity      cw:chandler ;
+        cw:containsState     cw:az ;
+        cw:locatedInAddress  cw:1909_e_ray_rd ;
+        cw:locatedInCity     cw:chandler ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:az ;
+        cw:postcode          "85225" ;
+        cw:restaurantName    "Hungry Howie's Pizza" ;
+        cw:serves            cw:pizza_sub_deluxe , <http://www.wikidata.org/entity/Q107608526> , cw:the_works_pizza , cw:large_the_works_pizza , cw:medium_cheese_pizza , cw:pizza_sub , cw:veggie_pizza , cw:meat_eaters_pizza , cw:pizza_dipping_sauce_cup , cw:philly_cheesesteak_pizza , cw:bacon_cheddar_burger_pizza , cw:large_pepperoni_plus_pizza , cw:howie_maui_pizza , cw:create_pizza .
+
+cw:manhattan  a  cw:state .
+
+cw:0.59  a      cw:Itemvalue .
+
+cw:5.79  a      cw:Itemvalue .
+
+cw:pizza_bianca  a             cw:menu_item , cw:Food ;
+        cw:amount              "10" ;
+        cw:hasValue            cw:10 ;
+        cw:servedInRestaurant  cw:broad_street_cafe .
+
+cw:middle_village  a  cw:City .
+
+cw:267_swanton_rd  a  cw:Address .
+
+cw:supreme_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "21.99" ;
+        cw:hasValue            cw:21.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#joey's_n_y_pizza> .
+
+cw:116.99  a    cw:Itemvalue .
+
+cw:3_meat_treat_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8" ;
+        cw:hasValue            cw:8 ;
+        cw:servedInRestaurant  cw:little_caesars_pizza .
+
+cw:khans_korean_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8" ;
+        cw:hasValue            cw:8 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#khan's_bar_&_grill> .
+
+cw:bethlehem  a  cw:City .
+
+cw:89109  a     cw:Postcode .
+
+cw:postcode  a  cw:Postcode .
+
+cw:21100_91st_pl_s  a  cw:Address .
+
+cw:laconia  a   cw:City .
+
+<http://www.wikidata.org/entity/Q107608526>
+        a                      cw:City , cw:Food , cw:Ingredient , cw:menu_item , cw:Restaurant , cw:Address , cw:categories , cw:state ;
+        cw:amount              "1.75" , "" , "18.99" , "12.5" , "15.95" , "3.29" , "17.95" , "10.99" , "1.79" , "11" , "5" , "3.5" , "5.5" , "17" , "19.99" , "14.29" , "7.29" , "13" , "16.95" , "14" , "7" , "23.99" , "7.99" , "3.59" , "2" , "12.95" , "19.95" , "13.99" , "2.5" , "8.95" , "6.99" , "5.99" , "4.99" , "4" , "14.95" , "2.75" , "8.99" , "4.95" , "2.76" , "17.99" ;
+        cw:containsAdress      cw:555_soquel_ave , cw:200_e_main_cross_st , cw:1201_16th_st , <http://www.wikidata.org/entity/Q107608526> , cw:1876_black_rock_tpke , cw:4200_boat_st , cw:111_lawrence_rd , cw:rt_114 , cw:1760_44th_st_s_w , cw:22_warren_st , cw:14_scott_adam_rd ;
+        cw:containsCity        cw:danvers , cw:san_jose , cw:san_diego , cw:santa_cruz , cw:lawrence_township , <http://www.wikidata.org/entity/Q82799> , cw:cockeysville , cw:wyoming , cw:denver , <http://www.wikidata.org/entity/Q1071027> ;
+        cw:containsState       cw:lawrenceville , cw:ak , cw:co , cw:ct , cw:mi , cw:md , cw:oh , cw:manhattan , cw:ma , cw:ca ;
+        cw:hasValue            cw:12.5 , cw:2.5 , cw:17.99 , cw:16.95 , cw:11 , cw:17.95 , cw:17 , cw:19.99 , cw:2 , cw:13 , cw:3.5 , cw:4.95 , cw:19.95 , cw:4 , cw:7.99 , cw:2.76 , cw:23.99 , cw:7 , cw:3.59 , cw:4.99 , cw:3.29 , cw: , cw:8.99 , cw:7.29 , cw:15.95 , cw:18.99 , cw:8.95 , cw:1.79 , cw:2.75 , cw:10.99 , cw:6.99 , cw:14.29 , cw:12.95 , cw:1.75 , cw:14 , cw:5.5 , cw:5 , cw:13.99 , cw:14.95 , cw:5.99 ;
+        cw:isIngredientOf      cw:white_pizza_sub , cw:pierogi_pizza , cw:supreme_deluxe_pizza , cw:shrimp_scampi_pizza , cw:marinara_pizza , cw:b.b.q._chicken_pizza , cw:deluxe_pizza , cw:taco_pizza , cw:greek_pizza , cw:pizza_primavera , <http://www.wikidata.org/entity/Q11236330> , cw:rancher_pizza , cw:the_everything_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:pizza_logs , cw:broad_street_cheese_pizza , cw:california_pizza , cw:cheese_pizza , cw:sushi_pizza , cw:pizza_puttenesca , cw:cheese_steak_pizza , cw:3_meat_treat_pizza , cw:margarita_flat_bread_pizza , cw:grilled_chicken_pizza , cw:pizza_bruschetta , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#byop_(build_your_own_pizza)> , cw:chicken_club_pizza , cw:artichoke_chicken_pizza , cw:veggie_lovers_pizza , cw:ohio_river_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:vegan_pizza , cw:veggie_pizza , cw:caprese_pizza , cw:ultimate_supreme_pizza , cw:pizza_sandwich , cw:wood_oven_pizza , cw:pizza_bread , cw:jones_street_pizza , cw:caeser_sald_pizza , cw:vegetarian_pizza , cw:pizza_bagel , cw:supreme_pizza , cw:chicken_parmigiana_pizza , cw:berlin_pizza , cw:seafood_pizza , cw:menu_item , cw:grandma_pizza , cw:white_pizza , cw:chicken_parmesan_pizza , cw:blt_pizza , cw:gyro_pita_pizza , cw:garden_pizza , cw:buffalo_chicken_pizza , cw:roasted_vegetable_pizza , cw:pizza_mia , cw:pita_pizza , cw:the_youghigheny_pizza , cw:barbecue_chicken_pizza , cw:bbq_chicken_pizza , cw:b.l.t._pizza ;
+        cw:itemName            "Feta cheese, green olives, black olives, green peppers, onions" , "A deep fried flour tortilla topped with beans, choice of meat, monterey jack and cheddar cheese, garnished with fresh tomatoes, fresh green onions, fresh guacamole and sour cream." , "Olives, onions, capers, tomatoes" , "Shredded chicken, chorizo or Angus ground beef stuffed into two flat crisp tortillas. Covered with melted queso cheese and topped with pico de gallo." , "Cheese on bottom, plum tomatoes on top." , "With tomato sauce or fresh garlic and olive oil and add the toppings you select for your own pizza combination." , "With juice or 12oz soda" , "Sausage, pepperoni, capicola and hot pizza sauce, hot peppers and onions" , "Your Choice Of Bbq Chicken Or Sante Fe" , "Bacon, chicken, green peppers, chopped tomatoes and cheddar cheese." , "Flat bread seasoned with garlic olive oil topped with mozzarella, parmesan, tomatoes and balsamic glaze." , "Pepperoni, jalapeno, and crushed red peppers ." , "Garlic (no charge) , carrots, bacon, mushrooms, onions, sauteed onions, green peppers, fresh tomatoes, broccoli, black olives, pepperocini, hot pepper rings, pineapple, pepperoni, sausage, ham, meatball, vermont cheddar, ricotta blend, extra cheese, anchovies." , "olive oil, roasted wild mushrooms, goat cheese fried shallots" , "Roasted eggplant, red and yellow peppers, grilled onion, artichokes, kalamata olives, tomato and mozzarella. goat cheese on request" , "Italian pepperoni, hot italian sausage, fresh ground western beef, cob smoked bacon, marinated chicken breast, new england baked ham anchovy filets, fresh plum tomatoes, freshly cut broccoli, fresh white mushrooms, fresh green spinach, freshly sliced eggplant, freshly sliced red onions, freshly sliced green peppers, marinated sun dried tomatoes, sliced jalapeno peppers, roasted red peppers, freshly chopped garlic, california black olives, sweet hawaiian pineapple, marinated artichoke hearts, scrambled eggs new, italian gorgonzola cheese, greek feta cheese, vegan soy cheese, grated parmesan cheese, flavorful four cheese blend" , "Fried chicken, mozzarella and tomato sauce" , "Philly steak, green peppers, mushrooms, onions, provolone and mozzarella." , "Crisp bacon, provolone, tomato sauce, tomato, lettuce, miracle whip" , "Grilled chicken breast smothered in fire sauce with tomatoes and blue cheese crumbles and pizza cheese" , "Roasted artichoke hearts, sweet potatoes, olive tapenade, fresh basil, fire roasted red peppers, mozzarella and herb goat cheese topped with baby arugula" , "Red Onion, Mushroom, Spinach, Tomato, Marinara, Mozzarella, Romano served with a Garden Salad" , "item description" , "White pizza with chicken, spinach, garlic, fresh mushrooms, tomatoes and pizza cheese" , "Homestyle tomato sauce, sliced chicken breast,   bacon and fresh roma tomatoes topped with smoked   provolone, mozzarella and cheddar cheeses." , "Lettuce, tomatoes, ground beef and cheddar cheese." , "Pepperoni, sausage, peppers, onions, mushrooms, mozzarella and tomato. kalamata olives on request" , "Artichokes, fresh tomatoes and parmesan cheese." , "Creamy artichoke spinach sauce, featuring bacon, is topped with sliced chicken breast, fresh tomatoes, artichokes, mozzarella and cheddar cheese." , "Your choice of shredded chicken, chorizo or Angus ground beef stuffed into two flat crisp tortillas. Covered with melted queso cheese and topped with pico de gallo." , "house made sausage, pickled onion, broccoli rabe, creamy goat cheese" , "Cheese, pepperoni, mushrooms, green peppers, sausage" , "A garlic white pizza topped with tomatoes, shrimp, scallops, crabmeat and pizza cheeses" , "Includes mini greek salad" , "Green and banana peppers, onions, mushrooms, black olives and tomatoes." , "Our original round pizza topped with pepperoni, sausage and bacon." , "Provolone cheese, garlic, olive oil, sliced tomatoes (may substitute another topping)" , "Sauerkraut, smashed potatoes, onions, mozzarella and cheddar cheese on a garlic butter sauce pizza" , "Bbq sauce, chicken, red onions" , "Bacon , lettuce, tomato, mayo, ranch" , "Broccoli, spinach, peppers and mushrooms" , "Our legendary BBQ sauce, smoked gouda, red onions and fresh cilantro transform this original to iconic." , "Mushroom, Slivered Onion, Green Pepper, Black Olive, Sliced Tomato and Mozzarella Cheese." , "Start out with the classic flatbread pizza (your choice of sauce and mozzarella cheese)" , "Pepperoni, mushrooms, onions, green peppers, sausage, meatballs, black olives, extra cheese" , "Traditional pizza logs with pepperoni and mozzarella cheese served with a side of our homemade marinara sauce" , "Zucchini, tomatoes, artichoke hearts and eggplant." , "Our Homemade Flour Tortilla And Specialty Blend Cheese, With Spinach, Tomato, Onion And Green Pepper" , "Fresh Mozzarella, Slices of Fresh Roma Tomatoes, Zucchini Blossoms, Topped with Fresh Basil Leaves, Dried Oregano, Drizzle of Balsamic Glaze" , "Ground beef, melted cheddar cheese and your choice of sauce on a fried corn shell topped with green olives." , "BBQ Sauce, Mozzarella Cheese, diced Chicken Breast, Onions" , "Pepperoni, salami, cappicola, roasted red peppers, banana peppers and black olives" , "Fresh mozzarella, plum tomatoes and basil" , "Mozzarella and cheddar, chorizo, red onion and jalapenos." , "Create your own specialty pizza from any of our sauces and 3 toppings." , "Garlic buttered buns, pizza sauce, pepperoni and provolone cheese baked to bring out the true flavors" , "Corned beef, 1000 island, sauerkraut, red onion" , "Basil pesto, fresh tomato, red onion and black olives" , "Sweet bbq sauce topped with bbq chicken breast, bacon, red onions and mozzarella and gouda cheeses. garnished with cilantro and crispy onions." , "Spinach, Eggplant, Sliced Tomato and Mushrooms" , "Our original round pizza topped with pepperoni, Italian sausage, mushroom, onion, and green pepper." , "Tender gulf shrimp, creamy white garlic sauce, green onion" , "With onions and green peppers" , "Mozzarella, fontina, red onion and cilantro" , "Created here in 1985. Our legendary BBQ sauce, smoked gouda, red onions and fresh cilantro transform this original to iconic" , "Tuna or salmon scallion pancake seaweed spicy kapayaki sauce" , "Sausage, pepperoni, meatballs, peppers, onions, black olives, mushrooms" , "Classic cheese or create your own pizza." , "Fresh Tomato, Fresh Mozzarella and Basil" , "with mushroom" , "with pepperoni & mushroom" , "Traditional sauce with chunks of breaded chicken covered with mozzarella and romano cheese." , "Grilled chicken, roman lettuce, groutons, caeser salad dressin" , "Tomato, Basil, Garlic" , "Fresh mozzarella, garlic tomato, and basil" , "Fresh zucchini, onions , tomatoes, mushrooms" , "Pepperoni, marinara sauce, provolone cheese, mushrooms and italian seasoning" , "Garlic roll baked with mozzarella onions and tomato." , "Tomato, Basil, Garlic, Daiya Cheese" , "Classic cheese or create your own square thick pan sicilian pizza." , "Alfredo sauce, sliced grilled chicken breast, bacon, fresh mushrooms, spinach and roma tomatoes. topped with mozzarella and smoked gouda cheeses." , "Gyro meat, ground beef, salami, black olives, green peppers, onions, tomato, feta and mozzarella cheese." , "Max 3 toppings per slice" , "A classic featuring our house made pizza sauce." , "Thinly sliced grilled ribeye, onions, mushrooms, red peppers and banana peppers" , "Genoa salami, spicy capricolla and bacon with a blend of mozzarella, cheddar and rich tomato sauce." ;
+        cw:locatedInAddress    cw:4200_boat_st , cw:111_lawrence_rd , cw:1760_44th_st_s_w , cw:14_scott_adam_rd , cw:1201_16th_st , cw:22_warren_st , cw:rt_114 , cw:1876_black_rock_tpke , cw:200_e_main_cross_st , cw:555_soquel_ave , <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity       cw:denver , cw:santa_cruz , cw:danvers , <http://www.wikidata.org/entity/Q1071027> , cw:cockeysville , <http://www.wikidata.org/entity/Q82799> , cw:wyoming , cw:san_diego , cw:lawrence_township , cw:san_jose ;
+        cw:locatedInCountry    cw:us ;
+        cw:locatedInState      cw:co , cw:ca , cw:md , cw:mi , cw:lawrenceville , cw:ma , cw:manhattan , cw:ct , cw:oh , cw:ak ;
+        cw:postcode            "21030" , "49519" , "92108" , "45840" , "99709" , "95123" , "10007" , "8648" , "6825" , "1923" , "80202" , "95062" ;
+        cw:restaurantName      "Nino's Trattoria & Pizzeria" , "Chena's Alaskan Grill" , "Tavern At The Inn" , "Gran Morsi" , "Buca Di Beppo - San Jose - Oakridge" , "Mellow Mushroom Pizza Bakers" , "Russo's Pizza" , "Ristorante Italiano" , "Original Giorgio's" , "Tilted Kilt Mission Valley" , "Tomato & Basil" , "Grassfields Bar & Grill" ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#brando's_pizza> , cw:keyme , cw:california_pizza_kitchen , cw:valley_lahvosh_baking , <http://www.wikidata.org/entity/Q107608526> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#austin's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> , cw:the_melting_pot_-_white_plains , cw:steinway_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tascali's_decades_pasta_&_grill> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#antonio's_pizza> , <http://www.wikidata.org/entity/Q1071027> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#copeland's_cheescake_bistro> , <http://www.wikidata.org/entity/Q7053766> , cw:kyoto_sushi , cw:town_pub , cw:milanos_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#casino's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> , cw:tavern_on_the_square , cw:walnut_grille , cw:the_brentwood , cw:country_bagel_bakery , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#ralph's_grocery_deli> , cw:the_fire_den ;
+        cw:serves              cw:house_made_pizza , cw:white_pizza , cw:pizza_fries , cw:pizza_bruschetta , cw:greek_pizza , cw:pizza_sub , cw:bbq_chicken_pizza , cw:cheesesteak_stuffed_cheese_pizza , cw:bronx_bomber_pizza , cw:b.b.q._chicken_pizza , <http://www.wikidata.org/entity/Q82799> , cw:mini_pizza , cw:hawaiian_pizza , cw:italiano_pizza , cw:pizza_con_formaggio , cw:blt_pizza , cw:pizza_steak_sub , cw:gluten_free_veg_out_pizza , cw:pepperoni_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:cheese_steak_pizza , cw:cheese_pizza , cw:berlin_pizza , cw:bruha_pizza , cw:the_everything_pizza , cw:chicken_wing_pizza , <http://www.wikidata.org/entity/Q7053766> , cw:taco_pizza , cw:veggie_lovers_pizza , cw:buffalo_chicken_pizza , cw:shrimp_scampi_pizza , cw:thin_crust_margarita_pizza , cw:build_your_own_pizza , cw:chicken_parmigiana_pizza , cw:pizza_steak , cw:pizza_burger , cw:seafood_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#monte_carlo_pizza_(white)> , cw:spicy_meat_pizza , cw:californian_pizza , <http://www.wikidata.org/entity/Q1071027> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#byop_(build_your_own_pizza)> , cw:roasted_vegetable_pizza , cw:carne_pizza , cw:rancher_pizza .
+
+cw:13005_n_e_70th_pl  a  cw:Address .
+
+cw:rancher_pizza  a            cw:menu_item , cw:Food ;
+        cw:amount              "19.95" ;
+        cw:hasValue            cw:19.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:vegan_pizza  a              cw:menu_item , cw:Food ;
+        cw:amount              "8.5" ;
+        cw:hasValue            cw:8.5 ;
+        cw:servedInRestaurant  cw:broad_street_cafe .
+
+cw:8680_pineview_ln_n
+        a       cw:Address .
+
+cw:16.99  a     cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#philly's_subs>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:2111_stewart_ave ;
+        cw:containsCity      cw:wausau ;
+        cw:containsState     cw:wi ;
+        cw:locatedInAddress  cw:2111_stewart_ave ;
+        cw:locatedInCity     cw:wausau ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:wi ;
+        cw:postcode          "54401" ;
+        cw:restaurantName    "Philly's Subs" ;
+        cw:serves            cw:pizza .
+
+cw:co   a       cw:state .
+
+cw:8.99  a      cw:Itemvalue .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_supreme_pizza.>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "14.99" ;
+        cw:hasValue            cw:14.99 ;
+        cw:servedInRestaurant  cw:bronson_strike_zone .
+
+cw:1760_44th_st_s_w  a  cw:Address .
+
+cw:99216  a     cw:Postcode .
+
+cw:mphs  a      cw:state .
+
+cw:2901_watson_blvd  a  cw:Address .
+
+cw:16508  a     cw:Postcode .
+
+cw:5478  a      cw:Postcode .
+
+cw:98034  a     cw:Postcode .
+
+cw:70130  a     cw:Postcode .
+
+cw:pizza_mia  a                cw:menu_item , cw:Food ;
+        cw:amount              "8.59" ;
+        cw:hasValue            cw:8.59 ;
+        cw:servedInRestaurant  cw:zios_italian_kitchen_-_olathe .
+
+cw:4043  a      cw:Postcode .
+
+cw:pepperoni_pizza_steak
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "6.95" , "5" ;
+        cw:hasValue            cw:6.95 , cw:5 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> , cw:milanos_pizza .
+
+cw:bloomington  a  cw:City .
+
+cw:loaded_steak_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "17.95" ;
+        cw:hasValue            cw:17.95 ;
+        cw:servedInRestaurant  cw:kennebunk_house_of_pizza .
+
+cw:14.99  a     cw:Itemvalue .
+
+cw:14_scott_adam_rd  a  cw:Address .
+
+cw:1.79  a      cw:Itemvalue .
+
+cw:6.99  a      cw:Itemvalue .
+
+cw:the_italian_oven  a       cw:Restaurant ;
+        cw:containsAdress    cw:623_highland_ave ;
+        cw:containsCity      cw:connellsville ;
+        cw:containsState     cw:s_connelsvl ;
+        cw:locatedInAddress  cw:623_highland_ave ;
+        cw:locatedInCity     cw:connellsville ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:s_connelsvl ;
+        cw:postcode          "15425" ;
+        cw:restaurantName    "The Italian Oven" ;
+        cw:serves            cw:pizza_fries .
+
+cw:3    a       cw:Itemvalue .
+
+cw:7559_metropolitan_ave
+        a       cw:Address .
+
+cw:mount_ross  a  cw:state .
+
+cw:95304  a     cw:Postcode .
+
+cw:booies_pizza  a           cw:Restaurant ;
+        cw:containsAdress    cw:653_w_26th_st ;
+        cw:containsCity      <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsState     cw:pa ;
+        cw:locatedInAddress  cw:653_w_26th_st ;
+        cw:locatedInCity     <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:pa ;
+        cw:postcode          "16508" ;
+        cw:restaurantName    "Booies Pizza" ;
+        cw:serves            cw:pizza .
+
+cw:2111_stewart_ave  a  cw:Address .
+
+cw:60402  a     cw:Postcode .
+
+cw:white_plains  a  cw:City .
+
+cw:1566  a      cw:Postcode .
+
+cw:19806  a     cw:Postcode .
+
+cw:4138_ogletown_stanton_rd
+        a       cw:Address .
+
+cw:barbecue_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "8.79" ;
+        cw:hasValue            cw:8.79 ;
+        cw:servedInRestaurant  cw:zios_italian_kitchen_-_olathe .
+
+cw:13   a       cw:Itemvalue .
+
+cw:12.99  a     cw:Itemvalue .
+
+cw:saint_albans  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#east_coast_wings_&_grill>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:800_n_main_st ;
+        cw:containsCity      cw:kernersville ;
+        cw:containsState     cw:matthewstown ;
+        cw:locatedInAddress  cw:800_n_main_st ;
+        cw:locatedInCity     cw:kernersville ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:matthewstown ;
+        cw:postcode          "27284" ;
+        cw:restaurantName    "East Coast Wings & Grill" ;
+        cw:serves            cw:cheesy_pita_pizza .
+
+cw:38104  a     cw:Postcode .
+
+cw:baked_ziti_pizza  a         cw:menu_item , cw:Food ;
+        cw:amount              "16.95" ;
+        cw:hasValue            cw:16.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:laguna_niguel  a  cw:City .
+
+cw:or   a       cw:state .
+
+cw:92108  a     cw:Postcode .
+
+cw:19_kelly_st  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#jet's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q7053766> ;
+        cw:containsCity      cw:white_lake ;
+        cw:containsState     cw:mi ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q7053766> ;
+        cw:locatedInCity     cw:white_lake ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:mi ;
+        cw:postcode          "48383" ;
+        cw:restaurantName    "Jet's Pizza" ;
+        cw:serves            cw:8_corner_pizza , cw:pizza .
+
+cw:2.5  a       cw:Itemvalue .
+
+cw:4.99  a      cw:Itemvalue .
+
+cw:tn   a       cw:state .
+
+cw:711_n_132nd_st  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#cristy's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:1001_s_main_st ;
+        cw:containsCity      cw:baltimore ;
+        cw:containsState     cw:oh ;
+        cw:locatedInAddress  cw:1001_s_main_st ;
+        cw:locatedInCity     cw:baltimore ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:oh ;
+        cw:postcode          "43105" ;
+        cw:restaurantName    "Cristy's Pizza" ;
+        cw:serves            cw:blt_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#veggie_pizza_(on_honey_wheat_dough)> , <http://www.wikidata.org/entity/Q82799> , cw:pizza , cw:create_your_own_pizza , cw:rolled_pizza_bites_10 , cw:philly_cheese_steak_pizza , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:our_backed_light_crust_stuffed_and_folded_with_our_freshest_ingredients_basted_with_garlic_butter_sprinkled_with_romano_cheese_and_parsley
+        a                  cw:Ingredient ;
+        cw:isIngredientOf  cw:cheese_pizzarito ;
+        cw:itemName        "Our backed light crust, stuffed and folded with our freshest ingredients, basted with garlic butter, sprinkled with romano cheese and parsley" .
+
+cw:18.95  a     cw:Itemvalue .
+
+cw:garlic_chicken_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.99" ;
+        cw:hasValue            cw:23.99 ;
+        cw:servedInRestaurant  cw:the_fire_den .
+
+cw:gainesville  a  cw:City .
+
+cw:in   a       cw:state .
+
+cw:currency  a  cw:Currency .
+
+cw:greek_style_pizza  a    cw:Ingredient ;
+        cw:isIngredientOf  cw:white_pizza ;
+        cw:itemName        "Greek style pizza" .
+
+cw:brookline  a  cw:City .
+
+cw:10.99  a     cw:Itemvalue .
+
+cw:half_pizzas  a              cw:menu_item , cw:Food ;
+        cw:amount              "5.99" ;
+        cw:hasValue            cw:5.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:pizzarestaurants  a  cw:categories .
+
+cw:12326_w_143rd_st  a  cw:Address .
+
+cw:taco_pizza  a               cw:Food , cw:menu_item ;
+        cw:amount              "4.89" , "1.99" , "20" , "" , "19.95" , "12.25" ;
+        cw:hasValue            cw:4.89 , cw:19.95 , cw:12.25 , cw: , cw:20 , cw:1.99 ;
+        cw:servedInRestaurant  cw:steinway_pizza , <http://www.wikidata.org/entity/Q1071027> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#knolla's_pizza> , cw:taco_pronto , <http://www.wikidata.org/entity/Q107608526> .
+
+cw:2.99  a      cw:Itemvalue .
+
+cw:primavera_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "14" , "16.95" ;
+        cw:hasValue            cw:14 , cw:16.95 ;
+        cw:servedInRestaurant  cw:milanos_pizza , <http://www.wikidata.org/entity/Q7053766> .
+
+cw:dark_hollow_pizza  a        cw:menu_item , cw:Food ;
+        cw:amount              "17.99" ;
+        cw:hasValue            cw:17.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+cw:meatball_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "" ;
+        cw:hasValue            cw: ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#dioli's_italian_market> .
+
+cw:order_3_large_pizzas_and_get_the_4th_pizza_free
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "37.99" ;
+        cw:hasValue            cw:37.99 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q7053766> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#knolla's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    cw:3817_w_13th_st_n ;
+        cw:containsCity      cw:wichita ;
+        cw:containsState     cw:ks ;
+        cw:locatedInAddress  cw:3817_w_13th_st_n ;
+        cw:locatedInCity     cw:wichita ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:ks ;
+        cw:postcode          "67203" ;
+        cw:restaurantName    "Knolla's Pizza" ;
+        cw:serves            cw:taco_pizza .
+
+cw:8037  a      cw:Postcode .
+
+cw:378_broad_st  a  cw:Address .
+
+cw:49028  a     cw:Postcode .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#abo's_pizza>
+        a                    cw:Restaurant ;
+        cw:containsAdress    <http://www.wikidata.org/entity/Q107608526> ;
+        cw:containsCity      cw:littleton ;
+        cw:containsState     cw:co ;
+        cw:locatedInAddress  <http://www.wikidata.org/entity/Q107608526> ;
+        cw:locatedInCity     cw:littleton ;
+        cw:locatedInCountry  cw:us ;
+        cw:locatedInState    cw:co ;
+        cw:postcode          "80129" ;
+        cw:restaurantName    "Abo's Pizza" ;
+        cw:serves            cw:veggie_combo_pizza , <http://www.wikidata.org/entity/Q82799> , cw:meat_lover_pizza , cw:veggie_supreme_pizza , <http://www.wikidata.org/entity/Q107608526> , cw:supreme_combo_pizza .
+
+cw:wembley  a   cw:Address .
+
+cw:pizza_upside_down  a        cw:menu_item , cw:Food ;
+        cw:amount              "16" ;
+        cw:hasValue            cw:16 ;
+        cw:servedInRestaurant  cw:steinway_pizza .
+
+cw:cadillac_pizza  a           cw:menu_item , cw:Food ;
+        cw:amount              "8.99" ;
+        cw:hasValue            cw:8.99 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> .
+
+cw:garden_pizza  a             cw:menu_item , cw:Food ;
+        cw:amount              "15" , "19.99" ;
+        cw:hasValue            cw:15 , cw:19.99 ;
+        cw:servedInRestaurant  cw:spagio , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#joey's_n_y_pizza> .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pesto_sauce_pizza_(vegetarian)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "23.99" ;
+        cw:hasValue            cw:23.99 ;
+        cw:servedInRestaurant  cw:the_fire_den .
+
+cw:santa_cruz  a  cw:City .
+
+cw:1.42  a      cw:Itemvalue .
+
+cw:washington  a  cw:City .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pizza_boy_citra_pils_(4)>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "5" ;
+        cw:hasValue            cw:5 ;
+        cw:servedInRestaurant  cw:c19 .
+
+cw:ms   a       cw:state .
+
+cw:pizza_bread  a              cw:menu_item , cw:Food ;
+        cw:amount              "3.75" , "5.79" , "4.59" , "5.99" ;
+        cw:hasValue            cw:4.59 , cw:5.79 , cw:3.75 , cw:5.99 ;
+        cw:servedInRestaurant  cw:baldinelli_pizza , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#giovanni's_pizza_and_pasta> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#pirate's_cove> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#avellino's_pizza> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#tascali's_decades_pasta_&_grill> .
+
+cw:15.3  a      cw:Itemvalue .
+
+cw:264_lakeside_ave  a  cw:Address .
+
+cw:27284  a     cw:Postcode .
+
+cw:roasted_vegetable_pizza
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "12.95" ;
+        cw:hasValue            cw:12.95 ;
+        cw:servedInRestaurant  <http://www.wikidata.org/entity/Q107608526> .
+
+cw:12567  a     cw:Postcode .
+
+cw:5.55  a      cw:Itemvalue .
+
+cw:keller  a    cw:City .
+
+cw:9.5  a       cw:Itemvalue .
+
+cw:italian_restaurantrestaurantitalian_restaurant_streeterville
+        a       cw:categories .
+
+cw:pepperoni_pizza  a          cw:menu_item , cw:Food ;
+        cw:amount              "17.95" , "10.95" , "" , "15" , "8.79" , "11.95" , "4.75" ;
+        cw:hasValue            cw: , cw:15 , cw:8.79 , cw:10.95 , cw:4.75 , cw:11.95 , cw:17.95 ;
+        cw:servedInRestaurant  cw:icon_grill , cw:buon_cibo , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#burgers_&_cupcakes> , cw:roadhouse_cafe , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q107608526> , cw:zios_italian_kitchen_-_olathe .
+
+cw:405_sea_st  a  cw:Address .
+
+cw:universityuniversity_university
+        a       cw:categories .
+
+cw:1310_n_w_23rd_ave  a  cw:Address .
+
+cw:653_w_26th_st  a  cw:Address .
+
+cw:18.76  a     cw:Itemvalue .
+
+cw:pizza_sub_deluxe  a         cw:menu_item , cw:Food ;
+        cw:amount              "4" ;
+        cw:hasValue            cw:4 ;
+        cw:servedInRestaurant  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#hungry_howie's_pizza> .
+
+cw:village_of_wellington
+        a       cw:state .
+
+cw:19713  a     cw:Postcode .
+
+cw:pizza_roll  a               cw:Food , cw:menu_item ;
+        cw:amount              "1.25" , "1.85" , "1.75" , "1.2" ;
+        cw:hasValue            cw:1.85 , cw:1.75 , cw:1.2 , cw:1.25 ;
+        cw:servedInRestaurant  cw:china_kitchen , <http://www.wikidata.org/entity/Q7053766> , <http://www.wikidata.org/entity/Q11236330> , <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#mi_pal's_deli> .
+
+cw:blue_anchor  a  cw:state .
+
+cw:ak   a       cw:state .
+
+cw:77380  a     cw:Postcode .
+
+cw:8.75  a      cw:Itemvalue .
+
+cw:restaurantitalian_restaurantitalian_restaurant_and_breakfast_spotbreakfast_spotitalian_restaurant_and_breakfast_spot_lower_east_side
+        a       cw:categories .
+
+cw:pizza_placetake_out_restaurantsrestaurantsitalian_restaurantspizza
+        a       cw:categories .
+
+cw:2898_reynolda_rd  a  cw:Address .
+
+<http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#large_cheese_pizza.>
+        a                      cw:menu_item , cw:Food ;
+        cw:amount              "9.99" ;
+        cw:hasValue            cw:9.99 ;
+        cw:servedInRestaurant  cw:bronson_strike_zone .
+
+cw:95123  a     cw:Postcode .
+
+cw:1_n_university_hl  a  cw:Address .
+
+cw:14.29  a     cw:Itemvalue .
+
+cw:6825  a      cw:Postcode .

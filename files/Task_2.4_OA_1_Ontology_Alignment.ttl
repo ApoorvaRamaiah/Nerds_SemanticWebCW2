@@ -1,0 +1,86 @@
+@prefix :      <http://www.semanticweb.org/apoorvaramaiah/ontologies/2024/4/untitled-ontology-32/> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix city:  <http://www.semanticweb.org/city/in3067-inm713/2024/restaurants#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+city:Gorgonzola  owl:equivalentClass  pizza:GorgonzolaTopping .
+
+city:Rosemary  owl:equivalentClass  pizza:RosemaryTopping .
+
+city:GreenPepper  owl:equivalentClass  pizza:GreenPepperTopping .
+
+city:Seafood  owl:equivalentClass  pizza:FishTopping .
+
+city:Anchovies  owl:equivalentClass  pizza:AnchoviesTopping .
+
+city:Artichokes  owl:equivalentClass  pizza:ArtichokeTopping .
+
+city:IsIngredientOf  owl:equivalentProperty
+                pizza:IsIngredientOf .
+
+city:NamedPizza  owl:equivalentClass  pizza:NamedPizza .
+
+city:Cheese  owl:equivalentClass  pizza:CheeseTopping .
+
+city:HasIngredient  owl:equivalentProperty
+                pizza:HasIngredient .
+
+city:JalapenoPepper  owl:equivalentClass
+                pizza:JalapenoPepperTopping .
+
+city:Mushroom  owl:equivalentClass  pizza:MushroomTopping .
+
+city:GoatCheese  owl:equivalentClass  pizza:GoatsCheeseTopping .
+
+city:MeatPizza  owl:equivalentClass  pizza:MeatyPizza .
+
+city:Meat  owl:equivalentClass  pizza:MeatTopping .
+
+city:Olives  owl:equivalentClass  pizza:OliveTopping .
+
+city:Food  owl:equivalentClass  pizza:Food .
+
+city:VegetarianPizza  owl:equivalentClass
+                pizza:VegetarianPizza .
+
+city:Country  owl:equivalentClass  pizza:Country .
+
+city:AmericanPizza  owl:equivalentClass
+                pizza:American .
+
+city:Garlic  owl:equivalentClass  pizza:GarlicTopping .
+
+city:Chicken  owl:equivalentClass  pizza:ChickenTopping .
+
+city:Mozzarella  owl:equivalentClass  pizza:MozzarellaTopping .
+
+<http://www.semanticweb.org/apoorvaramaiah/ontologies/2024/4/untitled-ontology-32>
+        a       owl:Ontology .
+
+city:Tomato  owl:equivalentClass  pizza:TomatoTopping .
+
+city:Sauce  owl:equivalentClass  pizza:SauceTopping .
+
+city:MushroomPizza  owl:equivalentClass
+                pizza:Mushroom .
+
+city:Fruit  owl:equivalentClass  pizza:FruitTopping .
+
+city:Pepper  owl:equivalentClass  pizza:PepperTopping .
+
+city:Ham  owl:equivalentClass  pizza:HamTopping .
+
+city:Pizza  owl:equivalentClass  pizza:Pizza .
+
+city:MargheritaPizza  owl:equivalentClass
+                pizza:Margherita .
+
+city:Spinach  owl:equivalentClass  pizza:SpinachTopping .
+
+city:Onions  owl:equivalentClass  pizza:OnionTopping .
+
+city:Capers  owl:equivalentClass  pizza:CaperTopping .
